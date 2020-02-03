@@ -19,6 +19,11 @@ class Navbar extends Component {
             </div>
             <div>
               <a className="btn-match btn-effect" href="#">
+                Rooms
+              </a>
+            </div>
+            <div>
+              <a className="btn-match btn-effect" href="#">
                 About
               </a>
             </div>
@@ -40,7 +45,7 @@ class Navbar extends Component {
               <h3>ZILNAI</h3>
               <p>Luxury Suites</p>
             </div>
-            <div className="btn-match btn-effect">Reserve</div>
+            <div className="btn-match btn-effect bold">Reserve</div>
           </div>
         </div>
       </header>

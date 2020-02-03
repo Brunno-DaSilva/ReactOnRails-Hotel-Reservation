@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Marcellus&display=swap");
 
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
 /*******************************
 *  START - Navigation Style    
 *******************************/
@@ -135,9 +136,13 @@ header {
 .btn-effect:hover:after {
   width: 100%;
 }
+
+.landing-page-container .bold {
+  font-weight: bold;
+}
 /*******************************
-  *    END - Navigation Style    
-  *******************************/
+*    END - Navigation Style    
+********************************/
 
 /*******************************
   *        LandingPage   
