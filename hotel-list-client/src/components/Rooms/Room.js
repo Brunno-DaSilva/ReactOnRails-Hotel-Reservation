@@ -27,6 +27,11 @@ class Room extends Component {
             <div className="rooms-card">
               <div className="left-col">
                 <div>
+                  {info.featured ? (
+                    <div className="lower-price">Featured</div>
+                  ) : (
+                    <div></div>
+                  )}
                   <img src="https://source.unsplash.com/collection/3448800/" />
                 </div>
               </div>
