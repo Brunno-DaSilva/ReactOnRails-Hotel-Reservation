@@ -261,3 +261,200 @@ Processing by ImagesController#index as HTML
 Completed 200 OK in 46ms (Views: 34.5ms | ActiveRecord: 0.9ms | Allocations: 9333)
 
 
+Started GET "/images" for ::1 at 2020-02-02 18:00:05 -0600
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImagesController#index as HTML
+  [1m[36mImage Load (2.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/controllers/images_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 22.3ms | ActiveRecord: 3.5ms | Allocations: 9872)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-02 18:12:47 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (2.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 38ms (Views: 31.5ms | ActiveRecord: 3.0ms | Allocations: 12874)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-02 18:12:51 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (80.6ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 102ms (Views: 20.9ms | ActiveRecord: 80.6ms | Allocations: 5892)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-02 18:13:42 -0600
+Processing by HotelRoomsController#index as HTML
+  [1m[36mHotelRoom Load (0.4ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.4ms | Allocations: 5873)
+
+
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "extras"[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "extras" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "extras1" varchar, "extras2" varchar, "extras3" varchar, "extras4" varchar, "extras5" varchar, "extras6" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "hotel_rooms"[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "hotel_rooms" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "slug" varchar, "roomType" varchar, "price" integer, "size" integer, "capacity" integer, "pets" boolean, "breakfast" boolean, "featured" boolean, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "roomImage" varchar, "roomDetails1" varchar, "roomDetails2" varchar, "roomDetails3" varchar, "roomDetails4" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "rooms"[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "rooms" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "slug" varchar, "type" varchar, "price" integer, "size" integer, "capacity" integer, "pets" boolean, "breakfast" boolean, "featured" boolean, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200202225159)[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200202222536),
+(20200202223644);
+
+[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-03 00:17:47.910635"], ["updated_at", "2020-02-03 00:17:47.910635"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "02c4414481ce31e361c083d31f76722a21464435"], ["created_at", "2020-02-03 00:17:47.927198"], ["updated_at", "2020-02-03 00:17:47.927198"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "extras"[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "extras" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "extras1" varchar, "extras2" varchar, "extras3" varchar, "extras4" varchar, "extras5" varchar, "extras6" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "hotel_rooms"[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "hotel_rooms" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "slug" varchar, "roomType" varchar, "price" integer, "size" integer, "capacity" integer, "pets" boolean, "breakfast" boolean, "featured" boolean, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "images"[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "images" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "roomImage" varchar, "roomDetails1" varchar, "roomDetails2" varchar, "roomDetails3" varchar, "roomDetails4" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "rooms"[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "rooms" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "slug" varchar, "type" varchar, "price" integer, "size" integer, "capacity" integer, "pets" boolean, "breakfast" boolean, "featured" boolean, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200202225159)[0m
+  [1m[35m (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200202222536),
+(20200202223644);
+
+[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-03 00:17:47.999048"], ["updated_at", "2020-02-03 00:17:47.999048"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-02-03 00:17:48.017001"], ["key", "environment"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "02c4414481ce31e361c083d31f76722a21464435"], ["created_at", "2020-02-03 00:17:48.039824"], ["updated_at", "2020-02-03 00:17:48.039824"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.7ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "single-economy"], ["slug", "single economy"], ["roomType", "single"], ["price", 100], ["size", 200], ["capacity", 1], ["pets", 0], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.077918"], ["updated_at", "2020-02-03 00:17:48.077918"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.5ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "single basic"], ["slug", "single-basic"], ["roomType", "single"], ["price", 150], ["size", 250], ["capacity", 1], ["pets", 0], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.088694"], ["updated_at", "2020-02-03 00:17:48.088694"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.6ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "single standard"], ["slug", "single-standard"], ["roomType", "single"], ["price", 250], ["size", 300], ["capacity", 1], ["pets", 1], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.101174"], ["updated_at", "2020-02-03 00:17:48.101174"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.6ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "single deluxe"], ["slug", "single-deluxe"], ["roomType", "single"], ["price", 300], ["size", 400], ["capacity", 1], ["pets", 1], ["breakfast", 1], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.109439"], ["updated_at", "2020-02-03 00:17:48.109439"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (1.0ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "double economy"], ["slug", "double-economy"], ["roomType", "double"], ["price", 200], ["size", 300], ["capacity", 2], ["pets", 0], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.116955"], ["updated_at", "2020-02-03 00:17:48.116955"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.6ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "double basic"], ["slug", "double-basic"], ["roomType", "double"], ["price", 250], ["size", 350], ["capacity", 2], ["pets", 0], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.125921"], ["updated_at", "2020-02-03 00:17:48.125921"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.6ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "double standard"], ["slug", "double-standard"], ["roomType", "double"], ["price", 300], ["size", 400], ["capacity", 2], ["pets", 1], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.133323"], ["updated_at", "2020-02-03 00:17:48.133323"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.4ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "double deluxe"], ["slug", "double-deluxe"], ["roomType", "double"], ["price", 400], ["size", 500], ["capacity", 2], ["pets", 1], ["breakfast", 1], ["featured", 1], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.139734"], ["updated_at", "2020-02-03 00:17:48.139734"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.5ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "family economy"], ["slug", "family-economy"], ["roomType", "family"], ["price", 300], ["size", 500], ["capacity", 3], ["pets", 0], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.146073"], ["updated_at", "2020-02-03 00:17:48.146073"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.6ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "family basic"], ["slug", "family-basic"], ["roomType", "family"], ["price", 350], ["size", 550], ["capacity", 4], ["pets", 0], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.152635"], ["updated_at", "2020-02-03 00:17:48.152635"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.5ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "family standard"], ["slug", "family-standard"], ["roomType", "family"], ["price", 400], ["size", 600], ["capacity", 5], ["pets", 1], ["breakfast", 0], ["featured", 0], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.161343"], ["updated_at", "2020-02-03 00:17:48.161343"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.4ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "family deluxe"], ["slug", "family-deluxe"], ["roomType", "family"], ["price", 500], ["size", 700], ["capacity", 6], ["pets", 1], ["breakfast", 1], ["featured", 1], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.170983"], ["updated_at", "2020-02-03 00:17:48.170983"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotelRoom Create (0.5ms)[0m  [1m[32mINSERT INTO "hotel_rooms" ("name", "slug", "roomType", "price", "size", "capacity", "pets", "breakfast", "featured", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "presidential"], ["slug", "presidential-room"], ["roomType", "presidential"], ["price", 600], ["size", 1000], ["capacity", 10], ["pets", 1], ["breakfast", 1], ["featured", 1], ["description", "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."], ["created_at", "2020-02-03 00:17:48.186528"], ["updated_at", "2020-02-03 00:17:48.186528"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-1.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.203544"], ["updated_at", "2020-02-03 00:17:48.203544"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-2.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.210400"], ["updated_at", "2020-02-03 00:17:48.210400"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-3.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.217135"], ["updated_at", "2020-02-03 00:17:48.217135"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-4.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.224060"], ["updated_at", "2020-02-03 00:17:48.224060"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-5.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.230970"], ["updated_at", "2020-02-03 00:17:48.230970"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-6.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.238808"], ["updated_at", "2020-02-03 00:17:48.238808"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-7.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.246352"], ["updated_at", "2020-02-03 00:17:48.246352"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-8.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.252443"], ["updated_at", "2020-02-03 00:17:48.252443"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.7ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-9.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.267315"], ["updated_at", "2020-02-03 00:17:48.267315"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-10.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.286071"], ["updated_at", "2020-02-03 00:17:48.286071"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (1.9ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-11.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.292614"], ["updated_at", "2020-02-03 00:17:48.292614"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (0.6ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-12.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.303522"], ["updated_at", "2020-02-03 00:17:48.303522"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mImage Create (1.8ms)[0m  [1m[32mINSERT INTO "images" ("roomImage", "roomDetails1", "roomDetails2", "roomDetails3", "roomDetails4", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["roomImage", "images/room-13.jpeg"], ["roomDetails1", "images/details-1.jpeg"], ["roomDetails2", "images/details-2.jpeg"], ["roomDetails3", "images/details-3.jpeg"], ["roomDetails4", "images/details-4.jpeg"], ["created_at", "2020-02-03 00:17:48.332187"], ["updated_at", "2020-02-03 00:17:48.332187"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mExtra Create (0.4ms)[0m  [1m[32mINSERT INTO "extras" ("extras1", "extras2", "extras3", "extras4", "extras5", "extras6", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["extras1", "Plush pillows and breathable bed linens"], ["extras2", "Soft, oversized bath towels"], ["extras3", "Full-sized, pH-balanced toiletries"], ["extras4", "Complimentary refreshments"], ["extras5", "Adequate safety/security"], ["extras6", "Internet"], ["created_at", "2020-02-03 00:17:48.373293"], ["updated_at", "2020-02-03 00:17:48.373293"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/hotel_rooms" for ::1 at 2020-02-02 18:18:12 -0600
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HotelRoomsController#index as HTML
+  [1m[36mHotelRoom Load (1.6ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 53ms (Views: 31.1ms | ActiveRecord: 2.4ms | Allocations: 10692)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-02 18:18:24 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.5ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 3331)
+
+
