@@ -9,6 +9,10 @@ class Room extends Component {
     show: false
   };
 
+  onClose = e => {
+    this.props.onClose && this.props.onClose(e);
+  };
+
   showModal = e => {
     this.setState({
       show: true
@@ -81,77 +85,75 @@ class Room extends Component {
                     </button>
                   </div>
 
-                  <Modal show={this.state.show}>
+                  <Modal onClose={this.showModal} show={this.state.show}>
                     <div className="modal-container">
-                      <div className="rooms-card">
-                        <div className="modal-header">
-                          <div>
-                            <h3>{info.name}</h3>
-                          </div>
-                          <div className="featured-position">
-                            {info.featured ? (
-                              <div className="lower-price">Featured</div>
-                            ) : (
-                              <div></div>
-                            )}
-                            <img src="https://source.unsplash.com/collection/3448800/" />
-                          </div>
+                      <div>
+                        <h3>{info.name}</h3>
+                      </div>
+                      <div className="modal-header">
+                        <div className="featured-position">
+                          {info.featured ? (
+                            <div className="lower-price">Featured</div>
+                          ) : (
+                            <div></div>
+                          )}
+                          <img src="https://source.unsplash.com/collection/3448800/" />
                         </div>
-                        <div className="modal-body">
-                          <div className="top-info">
-                            <div>
-                              <h4>{info.description}</h4>
-                            </div>
-                          </div>
-
-                          <div className="extra-info">
-                            <div>
-                              <p>{info.extras1}</p>
-                            </div>
-                            <div>
-                              <p>{info.extras2}</p>
-                            </div>
-                            <div>
-                              <p>{info.extras3}</p>
-                            </div>
-                            <div>
-                              <p>{info.extras4}</p>
-                            </div>
-                            <div>
-                              <p>{info.extras5}</p>
-                            </div>
-                            <div>
-                              <p>{info.extras6}</p>
-                            </div>
-                          </div>
+                      </div>
+                      <div className="modal-body">
+                        <div className="top-info">
                           <div>
-                            <div className="bottom-info">
-                              <p>
-                                <i className="fa fa-users"></i>
-                                {info.capacity}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <i className="fa fa-bed"></i>
-                                {info.roomType}
-                              </p>
-                            </div>
-                            <div>
-                              <p>
-                                <i class="fa fa-expand"></i>
-                                {info.size}m²
-                              </p>
-                            </div>
+                            <h4>Room Description:</h4>
+                            <p>{info.description}</p>
                           </div>
                         </div>
 
-                        <div className="modal-footer">
-                          <div className="btn-close-container">
-                            <button className="btn-close" href="#">
-                              Close
-                            </button>
+                        <div className="extra-info">
+                          <div>
+                            <p>{info.extras1}</p>
                           </div>
+                          <div>
+                            <p>{info.extras2}</p>
+                          </div>
+                          <div>
+                            <p>{info.extras3}</p>
+                          </div>
+                          <div>
+                            <p>{info.extras4}</p>
+                          </div>
+                          <div>
+                            <p>{info.extras5}</p>
+                          </div>
+                          <div>
+                            <p>{info.extras6}</p>
+                          </div>
+                        </div>
+                        <div className="bottom-info">
+                          <div>
+                            <p>
+                              <i className="fa fa-users"></i>
+                              {info.capacity}
+                            </p>
+                          </div>
+                          <div>
+                            <p>
+                              <i className="fa fa-bed"></i>
+                              {info.roomType}
+                            </p>
+                          </div>
+                          <div>
+                            <p>
+                              <i class="fa fa-expand"></i>
+                              {info.size}m²
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="modal-footer">
+                        <div className="btn-close-container">
+                          <button className="btn-close" onClick={this.onClose}>
+                            Close
+                          </button>
                         </div>
                       </div>
                     </div>

@@ -38,7 +38,8 @@
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.left-col .lower-price {
+.left-col .lower-price,
+.lower-price {
   position: absolute;
   width: 10vw;
   height: 5vh;
@@ -102,9 +103,7 @@
   justify-content: center;
   align-items: flex-end;
 }
-.price-title {
-  /* margin-bottom: 3.7rem; */
-}
+
 .price-title h3 {
   margin: 0;
   font-size: 1.5rem;
@@ -134,11 +133,13 @@
   text-align: right;
 }
 
-.btn-more-info-holder {
+.btn-more-info-holder,
+.btn-close {
   margin-top: 1.5rem;
 }
 
-.btn-more-info {
+.btn-more-info,
+.btn-close {
   height: auto;
   padding: 1.2rem;
   background-color: #22315e;
@@ -148,7 +149,8 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-.btn-more-info:hover {
+.btn-more-info:hover,
+.btn-close:hover {
   color: #ebdc58;
   cursor: pointer;
 }
@@ -180,6 +182,93 @@
 /*******************************
 *           Modal Style   
 ********************************/
+
+/* .modal-container > * {
+  border: 1px solid gold;
+} */
+.modal-container {
+  width: 60vw;
+  min-height: 75vh;
+  position: absolute;
+  top: 110vh;
+  left: 20vw;
+  background-color: #ffffff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 111;
+}
+.modal-container h3 {
+  font-size: 1.5rem;
+  color: #172243;
+  letter-spacing: 4px;
+}
+
+.modal-header {
+  margin: 0;
+  padding: 0;
+  width: 50vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.modal-header img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+}
+
+.modal-body {
+  width: 50vw;
+  height: 40vh;
+}
+.modal-body .top-info div h4 {
+  font-size: 1.2rem;
+  color: #22315e;
+}
+.modal-body .top-info {
+  background-color: #edf2fa;
+  padding: 0.2rem;
+  margin-top: 1rem;
+}
+.modal-body .top-info div p {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.bottom-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bottom-info p {
+  font-size: 0.9rem;
+}
+.bottom-info p i {
+  font-size: 0.9rem;
+}
+.modal-footer {
+  width: 50vw;
+  height: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.btn-close {
+  border: 0;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  line-height: 1;
+}
 
 /*******************************
 *    END -  Modal Style 
