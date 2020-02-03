@@ -27,7 +27,7 @@
 *         Rooms Cards   
 ********************************/
 .rooms-card {
-  width: 70vw;
+  width: 60vw;
   height: 40vh;
   background-color: #ffffff;
   display: flex;
@@ -39,11 +39,16 @@
 }
 
 .left-col .lower-price {
+  position: absolute;
   width: 10vw;
-  background-color: #ebdc58;
-  color: #172243;
-  border-radius: 10px;
-  margin-bottom: 2px;
+  height: 5vh;
+  background-color: #172243;
+  color: #ebdc58;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  line-height: 2.5rem;
+  text-align: center;
+  border-top-left-radius: 8px;
 }
 
 .left-col img {
@@ -53,17 +58,15 @@
 }
 
 .center-col {
-  margin: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.center-col h2,
-.right-col h2 {
+.center-col h2 {
   margin: 0;
-  margin-top: -5rem;
+  margin-top: -4rem;
   font-size: 2.5rem;
   letter-spacing: 0.3rem;
   color: #22315e;
@@ -75,33 +78,38 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  text-transform: capitalize;
 }
 
 .room-additional-info p,
 .allowed {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 0.3rem;
   color: #646e8a;
 }
 
 .room-additional-info p i,
 .allowed i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 0.3rem;
   color: #646e8a;
   margin-right: 1rem;
 }
 
-.price-bold {
-  font-weight: bolder;
-  border-bottom: 2px solid #9e9fa1;
-}
-
 .right-col {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
+}
+.price-title {
+  /* margin-bottom: 3.7rem; */
+}
+.price-title h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-bottom: 2px solid #9e9fa1;
 }
 
 .price-title p {
@@ -113,13 +121,13 @@
 .not-allowed {
   text-decoration: line-through;
   color: #fe5454;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 0.3rem;
   text-align: right;
 }
 
 .not-allowed i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 0.3rem;
   color: #646e8a;
   margin-right: 1rem;
@@ -132,7 +140,7 @@
 
 .btn-reserve {
   height: auto;
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: #22315e;
   color: #ffffff;
   font-style: 1rem;
@@ -142,6 +150,26 @@
   font-weight: bolder;
 }
 .btn-reserve:hover {
+  color: #ebdc58;
+}
+
+.right-col .btn-reserve-holder {
+  margin-top: 4rem;
+}
+
+.right-col .btn-reserve {
+  height: auto;
+  padding: 1.2rem;
+  background-color: #22315e;
+  color: #ffffff;
+  font-style: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+.right-col .btn-reserve:hover {
   color: #ebdc58;
 }
 

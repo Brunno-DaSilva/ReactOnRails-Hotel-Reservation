@@ -26,7 +26,7 @@ class Room extends Component {
           return (
             <div className="rooms-card">
               <div className="left-col">
-                <div>
+                <div className="featured-position">
                   {info.featured ? (
                     <div className="lower-price">Featured</div>
                   ) : (
@@ -52,34 +52,45 @@ class Room extends Component {
                       {info.roomType}
                     </p>
                   </div>
+                  <div>
+                    <p>
+                      <i class="fa fa-expand"></i>
+                      {info.size}m²
+                    </p>
+                  </div>
+
+                  <div className="btn-reserve-holder">
+                    <a className="btn-reserve" href="#">
+                      More info
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="right-col">
                 <div className="price-title">
-                  <h2 className="price-bold">${info.price}</h2>
+                  <h3 className="price-bold">${info.price}</h3>
                   <p>per night</p>
                 </div>
                 <div>
                   <div>
                     {info.breakfast ? (
                       <p className="allowed">
-                        <i class="fa fa-cutlery"></i> Breakfast Included
+                        <i class="fa fa-cutlery"></i> Breakfast
                       </p>
                     ) : (
                       <p className="not-allowed">
-                        <i class="fa fa-ban"></i> No breakfast
+                        <i class="fa fa-ban"></i> Breakfast
                       </p>
                     )}
                   </div>
-
                   <div>
                     {info.pets ? (
                       <p className="allowed">
-                        <i class="fa fa-paw"></i> Pets friendly
+                        <i class="fa fa-paw"></i> Pets allowed
                       </p>
                     ) : (
                       <p className="not-allowed">
-                        <i class="fa fa-ban" aria-hidden="true"></i> No Pets
+                        <i class="fa fa-ban" aria-hidden="true"></i> No P e t s
                       </p>
                     )}
                   </div>
