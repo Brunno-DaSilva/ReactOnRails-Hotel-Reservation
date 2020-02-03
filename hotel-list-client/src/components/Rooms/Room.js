@@ -1,20 +1,31 @@
 import React, { Component } from "react";
 import "./rooms.css";
 import "font-awesome/css/font-awesome.min.css";
+import Modal from "../Modal/Modal";
 
 class Room extends Component {
   state = {
-    roomInfo: []
+    roomInfo: [],
+    show: false
   };
+
+  showModal = e => {
+    this.setState({
+      show: true
+    });
+  };
+
   componentDidMount() {
     this.getRoomInfo();
   }
+
   getRoomInfo() {
     fetch("http://localhost:3000/hotel_rooms")
       .then(res => res.json())
       .then(jsonedRoomInfo => this.setState({ roomInfo: jsonedRoomInfo }))
       .catch(error => console.error(error));
   }
+
   render() {
     return (
       <div className="container">
@@ -59,11 +70,92 @@ class Room extends Component {
                     </p>
                   </div>
 
-                  <div className="btn-reserve-holder">
-                    <a className="btn-reserve" href="#">
-                      More info
-                    </a>
+                  <div className="btn-more-info-holder">
+                    <button
+                      className="btn-more-info"
+                      onClick={e => {
+                        this.showModal();
+                      }}
+                    >
+                      More Info
+                    </button>
                   </div>
+
+                  <Modal show={this.state.show}>
+                    <div className="modal-container">
+                      <div className="rooms-card">
+                        <div className="modal-header">
+                          <div>
+                            <h3>{info.name}</h3>
+                          </div>
+                          <div className="featured-position">
+                            {info.featured ? (
+                              <div className="lower-price">Featured</div>
+                            ) : (
+                              <div></div>
+                            )}
+                            <img src="https://source.unsplash.com/collection/3448800/" />
+                          </div>
+                        </div>
+                        <div className="modal-body">
+                          <div className="top-info">
+                            <div>
+                              <h4>{info.description}</h4>
+                            </div>
+                          </div>
+
+                          <div className="extra-info">
+                            <div>
+                              <p>{info.extras1}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras2}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras3}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras4}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras5}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras6}</p>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="bottom-info">
+                              <p>
+                                <i className="fa fa-users"></i>
+                                {info.capacity}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <i className="fa fa-bed"></i>
+                                {info.roomType}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <i class="fa fa-expand"></i>
+                                {info.size}m²
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="modal-footer">
+                          <div className="btn-close-container">
+                            <button className="btn-close" href="#">
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Modal>
                 </div>
               </div>
               <div className="right-col">

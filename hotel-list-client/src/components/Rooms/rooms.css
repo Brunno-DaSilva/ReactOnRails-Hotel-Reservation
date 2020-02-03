@@ -66,8 +66,8 @@
 
 .center-col h2 {
   margin: 0;
-  margin-top: -4rem;
-  font-size: 2.5rem;
+  margin-top: -2rem;
+  font-size: 2.3rem;
   letter-spacing: 0.3rem;
   color: #22315e;
   text-transform: capitalize;
@@ -134,23 +134,23 @@
   text-align: right;
 }
 
-.btn-reserve-holder {
+.btn-more-info-holder {
   margin-top: 1.5rem;
 }
 
-.btn-reserve {
+.btn-more-info {
   height: auto;
   padding: 1.2rem;
   background-color: #22315e;
   color: #ffffff;
-  font-style: 1rem;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: bolder;
 }
-.btn-reserve:hover {
+.btn-more-info:hover {
   color: #ebdc58;
+  cursor: pointer;
 }
 
 .right-col .btn-reserve-holder {
@@ -175,4 +175,12 @@
 
 /*******************************
 *    END - Rooms Cards   
+********************************/
+
+/*******************************
+*           Modal Style   
+********************************/
+
+/*******************************
+*    END -  Modal Style 
 ********************************/
