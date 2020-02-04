@@ -187,19 +187,21 @@
   border: 1px solid gold;
 } */
 .modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 60vw;
-  min-height: 75vh;
-  position: absolute;
-  top: 110vh;
-  left: 20vw;
+  min-height: 70vh;
   background-color: #ffffff;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  z-index: 111;
+  z-index: 200;
+  overflow: hidden;
 }
+
 .modal-container h3 {
   font-size: 1.5rem;
   color: #172243;
@@ -232,7 +234,7 @@
   color: #22315e;
 }
 .modal-body .top-info {
-  background-color: #edf2fa;
+  background-color: #fdfeff;
   padding: 0.2rem;
   margin-top: 1rem;
 }

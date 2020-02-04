@@ -6,16 +6,20 @@ import Modal from "../Modal/Modal";
 class Room extends Component {
   state = {
     roomInfo: [],
-    show: false
+    show: false,
+    currentModal: ""
   };
 
   onClose = e => {
-    this.props.onClose && this.props.onClose(e);
+    this.setState({
+      show: false
+    });
   };
 
-  showModal = e => {
+  showModal = data => {
     this.setState({
-      show: true
+      show: true,
+      currentModal: data.id
     });
   };
 
@@ -78,14 +82,19 @@ class Room extends Component {
                     <button
                       className="btn-more-info"
                       onClick={e => {
-                        this.showModal();
+                        this.showModal(info);
                       }}
                     >
                       More Info
                     </button>
                   </div>
 
-                  <Modal onClose={this.showModal} show={this.state.show}>
+                  <Modal
+                    onClose={this.showModal}
+                    show={
+                      this.state.show && this.state.currentModal === info.id
+                    }
+                  >
                     <div className="modal-container">
                       <div>
                         <h3>{info.name}</h3>

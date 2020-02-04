@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "font-awesome/css/font-awesome.min.css";
+import "../Modal/modal.css";
 
 class Modal extends Component {
   render() {
@@ -9,7 +10,7 @@ class Modal extends Component {
 
     return (
       <div>
-        <div>{this.props.children}</div>
+        <div className="main-modal-style">{this.props.children}</div>
       </div>
     );
   }
