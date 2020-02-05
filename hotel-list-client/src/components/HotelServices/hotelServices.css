@@ -4,7 +4,7 @@
 .main-services {
   padding: 3rem;
   width: auto;
-  height: 90vh;
+  min-height: 100vh;
   background-color: #ffffff;
   color: #22315e;
   z-index: -2;
@@ -14,18 +14,74 @@
   align-items: center;
 }
 
-.services-container {
-  width: 65vw;
-  border: 1px solid red;
-  /* background-color: #edf2fa; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.main-services h1 {
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.7rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  color: #172243;
 }
 
+.flaticon-container {
+  width: 50%;
+  height: 30%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services-container {
+  width: 88vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.services-container p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
 .services {
   width: 20vw;
-  height: 30vh;
-  border: 1px solid red;
+  height: 25vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services:hover {
+  background-color: #22315e;
+  color: #ffffff;
+}
+
+.sub-title-util {
+  margin-top: 20vh;
+}
+.utilities-container {
+  background-color: #f5f8fe;
+  width: 70vw;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.utilities {
+  width: 15vw;
+  height: 25vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.utilities:hover {
+  background-color: #22315e;
+  color: #ffffff;
 }
