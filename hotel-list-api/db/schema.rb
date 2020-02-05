@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_02_225159) do
+ActiveRecord::Schema.define(version: 2020_02_05_011320) do
 
   create_table "extras", force: :cascade do |t|
     t.string "extras1"
@@ -59,6 +59,20 @@ ActiveRecord::Schema.define(version: 2020_02_02_225159) do
     t.boolean "breakfast"
     t.boolean "featured"
     t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_reservations", force: :cascade do |t|
+    t.string "userName"
+    t.string "phoneNumber"
+    t.string "email"
+    t.string "address"
+    t.string "card"
+    t.string "cvc"
+    t.string "checkIn"
+    t.string "checkOut"
+    t.string "roomName"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
