@@ -157,74 +157,79 @@ class RoomCards extends Component {
                       this.state.show && this.state.currentModal === info.id
                     }
                   >
-                    <div className="modal-container">
-                      <div>
-                        <h3>{info.name}</h3>
-                      </div>
-                      <div className="modal-header">
-                        <div className="featured-position">
-                          {info.featured ? (
-                            <div className="lower-price">Featured</div>
-                          ) : (
-                            <div></div>
-                          )}
-                          <img src="https://source.unsplash.com/collection/3448800/" />
+                    <div className="modal">
+                      <div className="modal-container">
+                        <div>
+                          <h3>{info.name}</h3>
                         </div>
-                      </div>
-                      <div className="modal-body">
-                        <div className="top-info">
-                          <div>
-                            <h4>Room Description:</h4>
-                            <p>{info.description}</p>
+                        <div className="modal-header">
+                          <div className="featured-position">
+                            {info.featured ? (
+                              <div className="lower-price">Featured</div>
+                            ) : (
+                              <div></div>
+                            )}
+                            <img src="https://source.unsplash.com/collection/3448800/" />
                           </div>
                         </div>
+                        <div className="modal-body">
+                          <div className="top-info">
+                            <div>
+                              <h4>Room Description:</h4>
+                              <p>{info.description}</p>
+                            </div>
+                          </div>
 
-                        <div className="extra-info">
-                          <div>
-                            <p>{info.extras1}</p>
+                          <div className="extra-info">
+                            <div>
+                              <p>{info.extras1}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras2}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras3}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras4}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras5}</p>
+                            </div>
+                            <div>
+                              <p>{info.extras6}</p>
+                            </div>
                           </div>
-                          <div>
-                            <p>{info.extras2}</p>
-                          </div>
-                          <div>
-                            <p>{info.extras3}</p>
-                          </div>
-                          <div>
-                            <p>{info.extras4}</p>
-                          </div>
-                          <div>
-                            <p>{info.extras5}</p>
-                          </div>
-                          <div>
-                            <p>{info.extras6}</p>
+                          <div className="bottom-info">
+                            <div>
+                              <p>
+                                <i className="fa fa-users"></i>
+                                {info.capacity}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <i className="fa fa-bed"></i>
+                                {info.roomType}
+                              </p>
+                            </div>
+                            <div>
+                              <p>
+                                <i class="fa fa-expand"></i>
+                                {info.size}m²
+                              </p>
+                            </div>
                           </div>
                         </div>
-                        <div className="bottom-info">
-                          <div>
-                            <p>
-                              <i className="fa fa-users"></i>
-                              {info.capacity}
-                            </p>
+                        <div className="modal-footer">
+                          <div className="btn-close-container">
+                            <button
+                              className="btn-close"
+                              onClick={this.onClose}
+                            >
+                              Close
+                            </button>
                           </div>
-                          <div>
-                            <p>
-                              <i className="fa fa-bed"></i>
-                              {info.roomType}
-                            </p>
-                          </div>
-                          <div>
-                            <p>
-                              <i class="fa fa-expand"></i>
-                              {info.size}m²
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="modal-footer">
-                        <div className="btn-close-container">
-                          <button className="btn-close" onClick={this.onClose}>
-                            Close
-                          </button>
                         </div>
                       </div>
                     </div>
@@ -278,115 +283,96 @@ class RoomCards extends Component {
                     this.state.currentReservation === info.id
                   }
                 >
-                  <div className="modal-container">
-                    <div className="title-form">
-                      <h3>Reservation</h3>
-                    </div>
-                    <div className="modal-header">
-                      <div className="featured-position">
-                        {info.featured ? (
-                          <div className="lower-price">Featured</div>
-                        ) : (
-                          <div></div>
-                        )}
-                        <img src="https://source.unsplash.com/collection/3448800/" />
+                  <div className="modal">
+                    <div className="modal-container">
+                      <div className="title-form">
+                        <h3>Reservation</h3>
                       </div>
-                    </div>
-                    <div className="modal-body">
-                      <div className="top-info">
-                        <div>
-                          <form onSubmit={this.handleSubmit}>
-                            <label htmlFor="userName">Full Name</label>
-                            <input
-                              type="text"
-                              id="userName"
-                              value={this.state.formInputs.userName}
-                              onChange={this.handleChange}
-                            />
-                            <label htmlFor="phoneNumber">Phone Number</label>
-                            <input
-                              type="text"
-                              id="phoneNumber"
-                              value={this.state.formInputs.phoneNumber}
-                              onChange={this.handleChange}
-                            />
-                            <label htmlFor="email">Email</label>
-                            <input
-                              type="text"
-                              id="email"
-                              value={this.state.formInputs.email}
-                              onChange={this.handleChange}
-                            />
+                      <div className="modal-header">
+                        <div className="featured-position">
+                          {info.featured ? (
+                            <div className="lower-price">Featured</div>
+                          ) : (
+                            <div></div>
+                          )}
+                          <img src="https://source.unsplash.com/collection/3448800/" />
+                        </div>
+                      </div>
+                      <div className="modal-body">
+                        <div className="top-info">
+                          <div>
+                            <form onSubmit={this.handleSubmit}>
+                              <label htmlFor="userName">Full Name</label>
+                              <input
+                                type="text"
+                                id="userName"
+                                value={this.state.formInputs.userName}
+                                onChange={this.handleChange}
+                              />
+                              <label htmlFor="phoneNumber">Phone Number</label>
+                              <input
+                                type="text"
+                                id="phoneNumber"
+                                value={this.state.formInputs.phoneNumber}
+                                onChange={this.handleChange}
+                              />
+                              <label htmlFor="email">Email</label>
+                              <input
+                                type="text"
+                                id="email"
+                                value={this.state.formInputs.email}
+                                onChange={this.handleChange}
+                              />
 
-                            <label htmlFor="address">Home Address</label>
-                            <input
-                              type="text"
-                              id="address"
-                              value={this.state.formInputs.address}
-                              onChange={this.handleChange}
-                            />
-                            <label htmlFor="card">Card Number</label>
-                            <input
-                              type="text"
-                              id="card"
-                              value={this.state.formInputs.card}
-                              onChange={this.handleChange}
-                            />
-                            <label htmlFor="cvc">CVC</label>
-                            <input
-                              type="text"
-                              id="cvc"
-                              value={this.state.formInputs.cvc}
-                              onChange={this.handleChange}
-                            />
-                            <label htmlFor="date">Date</label>
-                            <input
-                              type="text"
-                              id="date"
-                              value={this.state.formInputs.date}
-                              onChange={this.handleChange}
-                            />
-                            <label htmlFor="roomName">roomName</label>
-                            <input
-                              type="text"
-                              id="roomName"
-                              value={this.state.formInputs.roomName}
-                              onChange={this.handleChange}
-                            />
-                            <input type="submit" className="submit" />
-                          </form>
+                              <label htmlFor="address">Home Address</label>
+                              <input
+                                type="text"
+                                id="address"
+                                value={this.state.formInputs.address}
+                                onChange={this.handleChange}
+                              />
+                              <label htmlFor="card">Card Number</label>
+                              <input
+                                type="text"
+                                id="card"
+                                value={this.state.formInputs.card}
+                                onChange={this.handleChange}
+                              />
+                              <label htmlFor="cvc">CVC</label>
+                              <input
+                                type="text"
+                                id="cvc"
+                                value={this.state.formInputs.cvc}
+                                onChange={this.handleChange}
+                              />
+                              <label htmlFor="date">Date</label>
+                              <input
+                                type="text"
+                                id="date"
+                                value={this.state.formInputs.date}
+                                onChange={this.handleChange}
+                              />
+                              <label htmlFor="roomName">roomName</label>
+                              <input
+                                type="text"
+                                id="roomName"
+                                value={this.state.formInputs.roomName}
+                                onChange={this.handleChange}
+                              />
+                              <input type="submit" className="submit" />
+                            </form>
+                          </div>
                         </div>
                       </div>
-
-                      <div className="bottom-info">
-                        <div>
-                          <p>
-                            <i className="fa fa-users"></i>
-                            {info.capacity}
-                          </p>
+                      <div className="modal-footer">
+                        <div className="btn-close-container">
+                          <button
+                            className="btn-close"
+                            onClick={this.onCloseReservation}
+                          >
+                            Close
+                          </button>
                         </div>
-                        <div>
-                          <p>
-                            <i className="fa fa-bed"></i>
-                            {info.roomType}
-                          </p>
-                        </div>
-                        <div>
-                          <p>
-                            <i class="fa fa-expand"></i>
-                            {info.size}m²
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="modal-footer">
-                      <div className="btn-close-container">
-                        <button
-                          className="btn-close"
-                          onClick={this.onCloseReservation}
-                        >
-                          Close
-                        </button>
                       </div>
                     </div>
                   </div>

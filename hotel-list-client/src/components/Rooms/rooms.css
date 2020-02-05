@@ -186,19 +186,32 @@
 /* .modal-container > * {
   border: 1px solid gold;
 } */
-.modal-container {
+
+.modal {
   position: fixed;
+  z-index: 200;
   left: 0;
   top: 0;
-  width: 60vw;
-  min-height: 70vh;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-container {
+  margin: 5% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
   background-color: #ffffff;
+
+  /* 
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  z-index: 200;
   overflow: hidden;
 }
 
@@ -270,6 +283,15 @@
   padding: 1rem 2rem;
   font-size: 0.8rem;
   line-height: 1;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*******************************
