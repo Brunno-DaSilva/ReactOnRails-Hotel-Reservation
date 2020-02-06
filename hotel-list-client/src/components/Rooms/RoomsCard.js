@@ -100,7 +100,6 @@ class RoomCards extends Component {
   };
 
   render() {
-    // console.log(userReservation);
     return (
       <div className="container">
         <div className="rooms-title">
