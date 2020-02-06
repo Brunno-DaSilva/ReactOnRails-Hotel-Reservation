@@ -20353,3 +20353,207 @@ Processing by HotelRoomsController#index as */*
 Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 3314)
 
 
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:33:24 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (1.4ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 53ms (Views: 48.2ms | ActiveRecord: 1.4ms | Allocations: 3349)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:33:35 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (1.3ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 1.3ms | Allocations: 3315)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:33:46 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.9ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.9ms | Allocations: 3315)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:33:52 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.7ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.7ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:34:00 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:35:51 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.5ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.5ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:39:27 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.4ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:40:33 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:45:16 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.4ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:45:29 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (1.0ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 1.0ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:46:36 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.5ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.5ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:49:38 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:49:58 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.6ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.6ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:50:02 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.6ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.6ms | Allocations: 3315)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:57:02 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (2.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 2.2ms | Allocations: 3348)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:57:19 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.3ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:57:44 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.3ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 15:58:07 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (1.0ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 1.0ms | Allocations: 3314)
+
+
+Started POST "/user_reservations" for ::1 at 2020-02-05 17:42:12 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UserReservationsController#create as HTML
+  Parameters: {"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"5465254", "cvc"=>"325", "date"=>"03/26/2020", "roomName"=>"SngleRoom", "user_reservation"=>{"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"5465254", "cvc"=>"325", "roomName"=>"SngleRoom"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[36mUserReservation Create (2.1ms)[0m  [1m[32mINSERT INTO "user_reservations" ("userName", "phoneNumber", "email", "address", "card", "cvc", "roomName", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["userName", "Bruno DaSilva"], ["phoneNumber", "4693072016"], ["email", "hi.dasilvab@gmail.com"], ["address", "1212 brunos address"], ["card", "5465254"], ["cvc", "325"], ["roomName", "SngleRoom"], ["created_at", "2020-02-05 23:42:13.090721"], ["updated_at", "2020-02-05 23:42:13.090721"]]
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+Completed 201 Created in 121ms (Views: 8.6ms | ActiveRecord: 6.4ms | Allocations: 8419)
+
+
+Started POST "/user_reservations" for ::1 at 2020-02-05 17:42:16 -0600
+Processing by UserReservationsController#create as HTML
+  Parameters: {"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"5465254", "cvc"=>"325", "date"=>"03/26/2020", "roomName"=>"SngleRoom", "user_reservation"=>{"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"5465254", "cvc"=>"325", "roomName"=>"SngleRoom"}}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[36mUserReservation Create (1.0ms)[0m  [1m[32mINSERT INTO "user_reservations" ("userName", "phoneNumber", "email", "address", "card", "cvc", "roomName", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["userName", "Bruno DaSilva"], ["phoneNumber", "4693072016"], ["email", "hi.dasilvab@gmail.com"], ["address", "1212 brunos address"], ["card", "5465254"], ["cvc", "325"], ["roomName", "SngleRoom"], ["created_at", "2020-02-05 23:42:16.649170"], ["updated_at", "2020-02-05 23:42:16.649170"]]
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+Completed 201 Created in 16ms (Views: 1.1ms | ActiveRecord: 4.1ms | Allocations: 2455)
+
+
+Started POST "/user_reservations" for ::1 at 2020-02-05 17:42:17 -0600
+Processing by UserReservationsController#create as HTML
+  Parameters: {"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"5465254", "cvc"=>"325", "date"=>"03/26/2020", "roomName"=>"SngleRoom", "user_reservation"=>{"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"5465254", "cvc"=>"325", "roomName"=>"SngleRoom"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[36mUserReservation Create (1.1ms)[0m  [1m[32mINSERT INTO "user_reservations" ("userName", "phoneNumber", "email", "address", "card", "cvc", "roomName", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["userName", "Bruno DaSilva"], ["phoneNumber", "4693072016"], ["email", "hi.dasilvab@gmail.com"], ["address", "1212 brunos address"], ["card", "5465254"], ["cvc", "325"], ["roomName", "SngleRoom"], ["created_at", "2020-02-05 23:42:17.114003"], ["updated_at", "2020-02-05 23:42:17.114003"]]
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+Completed 201 Created in 33ms (Views: 19.9ms | ActiveRecord: 3.0ms | Allocations: 2454)
+
+
+Started POST "/user_reservations" for ::1 at 2020-02-05 17:42:17 -0600
+Processing by UserReservationsController#create as HTML
+  Parameters: {"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"5465254", "cvc"=>"325", "date"=>"03/26/2020", "roomName"=>"SngleRoom", "user_reservation"=>{"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"5465254", "cvc"=>"325", "roomName"=>"SngleRoom"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[36mUserReservation Create (0.6ms)[0m  [1m[32mINSERT INTO "user_reservations" ("userName", "phoneNumber", "email", "address", "card", "cvc", "roomName", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["userName", "Bruno DaSilva"], ["phoneNumber", "4693072016"], ["email", "hi.dasilvab@gmail.com"], ["address", "1212 brunos address"], ["card", "5465254"], ["cvc", "325"], ["roomName", "SngleRoom"], ["created_at", "2020-02-05 23:42:17.296292"], ["updated_at", "2020-02-05 23:42:17.296292"]]
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 1.3ms | ActiveRecord: 2.4ms | Allocations: 2452)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 17:42:21 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (2.9ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 2.9ms | Allocations: 3348)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-05 17:50:51 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.8ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 164ms (Views: 148.0ms | ActiveRecord: 0.8ms | Allocations: 3348)
+
+
+Started POST "/user_reservations" for ::1 at 2020-02-05 17:51:19 -0600
+Processing by UserReservationsController#create as HTML
+  Parameters: {"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"332525632", "cvc"=>"333", "date"=>"03/26/2020", "roomName"=>"SngleRoom", "user_reservation"=>{"userName"=>"Bruno DaSilva", "phoneNumber"=>"4693072016", "email"=>"hi.dasilvab@gmail.com", "address"=>"1212 brunos address", "card"=>"332525632", "cvc"=>"333", "roomName"=>"SngleRoom"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[36mUserReservation Create (2.5ms)[0m  [1m[32mINSERT INTO "user_reservations" ("userName", "phoneNumber", "email", "address", "card", "cvc", "roomName", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["userName", "Bruno DaSilva"], ["phoneNumber", "4693072016"], ["email", "hi.dasilvab@gmail.com"], ["address", "1212 brunos address"], ["card", "332525632"], ["cvc", "333"], ["roomName", "SngleRoom"], ["created_at", "2020-02-05 23:51:19.359018"], ["updated_at", "2020-02-05 23:51:19.359018"]]
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/user_reservations_controller.rb:20:in `create'
+Completed 201 Created in 38ms (Views: 5.7ms | ActiveRecord: 4.8ms | Allocations: 2452)
+
+

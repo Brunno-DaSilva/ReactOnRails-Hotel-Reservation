@@ -111,39 +111,46 @@ class HotelServices extends Component {
           </div>
         </div>
 
-        <h1 class="sub-title-util">Enjoy our Yourself</h1>
-        <div className="utilities-container">
-          <div className="utilities">
-            <div className="flaticon-container">
-              <span className="flaticon-swimming-pool"></span>
-              <h3>Pool</h3>
-            </div>
+        <div class="sub-title-util">
+          <h1>Enjoy Our Utilities</h1>
 
-            <div></div>
-          </div>
-          <div className="utilities">
-            <div className="flaticon-container">
-              <span className="flaticon-popcorn"></span>
-              <h3>Theater</h3>
-            </div>
+          <div className="utilities-container">
+            <div className="utilities">
+              <div className="flaticon-container-ut">
+                <span className="flaticon-swimming-pool"></span>
+              </div>
 
-            <div></div>
-          </div>
-          <div className="utilities">
-            <div className="flaticon-container">
-              <span className="flaticon-microphone"></span>
-              <h3>Night Concert</h3>
+              <div className="ut-text-holder">
+                <h3>Pool</h3>
+              </div>
             </div>
+            <div className="utilities">
+              <div className="flaticon-container-ut">
+                <span className="flaticon-popcorn"></span>
+              </div>
 
-            <div></div>
-          </div>
-          <div className="utilities">
-            <div className="flaticon-container">
-              <span className="flaticon-birdie"></span>
-              <h3>Golf course</h3>
+              <div className="ut-text-holder">
+                <h3>Theater</h3>
+              </div>
             </div>
+            <div className="utilities">
+              <div className="flaticon-container-ut">
+                <span className="flaticon-microphone"></span>
+              </div>
 
-            <div></div>
+              <div className="ut-text-holder">
+                <h3>Night Concert</h3>
+              </div>
+            </div>
+            <div className="utilities">
+              <div className="flaticon-container-ut">
+                <span className="flaticon-birdie"></span>
+              </div>
+
+              <div className="ut-text-holder">
+                <h3>Golf course</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>

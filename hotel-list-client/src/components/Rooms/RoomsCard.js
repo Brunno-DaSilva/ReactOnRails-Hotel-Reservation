@@ -90,13 +90,17 @@ class RoomCards extends Component {
             checkOut: "",
             roomName: ""
           },
-          userReservation: [jsonedUserReservation, ...this.state.notices]
+          userReservation: [
+            jsonedUserReservation,
+            ...this.state.userReservation
+          ]
         });
       })
       .catch(error => console.log(error));
   };
 
   render() {
+    // console.log(userReservation);
     return (
       <div className="container">
         <div className="rooms-title">
