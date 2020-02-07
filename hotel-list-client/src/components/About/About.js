@@ -221,11 +221,11 @@ export default class About extends Component {
                     DEMO
                   </a>
                 </span>
-                <h2>Star Wars Heroes</h2>
+                <h2>Hotel Reservation</h2>
                 <p>
-                  A full-stack web application. Users can view, edit
-                  informations of the most iconic Star Wars heroes. Also, they
-                  can create their own characters.
+                  A full-stack web application built with React on Rails stack.
+                  A CRUD application which provides users with a option to
+                  reserve, delete, and update a room.
                 </p>
               </div>
               <div className="card-stats">
