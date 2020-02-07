@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./userReservation.css";
 
 class UserReservation extends Component {
   state = {
@@ -10,7 +11,8 @@ class UserReservation extends Component {
       address: "",
       card: "",
       cvc: "",
-      date: "",
+      checkIn: "",
+      checkOut: "",
       roomName: ""
     }
   };
@@ -58,37 +60,79 @@ class UserReservation extends Component {
   render() {
     console.log(this.state.userReservationData);
     return (
-      <div>
-        {this.state.userReservationData.map(data => {
-          return (
-            <div key={data.userName} className="data">
-              <h2>{data.userName}</h2>
-              <h3>{data.cvc}</h3>
-              <p>{data.date}</p>
-              <small>{data.roomName}</small>
-              <div>
-                <button
-                  key={data.id}
-                  onClick={() => {
-                    this.updateReservation(data.id);
-                  }}
-                >
-                  Update
-                </button>
-              </div>
-              <div>
-                <button
-                  key={data.id}
-                  onClick={() => {
-                    this.deleteReservation(data.id);
-                  }}
-                >
-                  Delete
-                </button>
-              </div>
-            </div>
-          );
-        })}
+      <div className="user-reservation-wrapper">
+        <div className="user-reservation-title">
+          <h1>Reservation Details</h1>
+        </div>
+        <div className="col-container">
+          <div className="user-reservation-container">
+            {this.state.userReservationData.map(data => {
+              return (
+                <div key={data.userName} className="user-reservation-details">
+                  <div>
+                    <h2>
+                      Welcome, <span>{data.userName}</span>
+                    </h2>
+                  </div>
+                  <div className="reservation-data">
+                    <div className="reservation-left-colum">
+                      <h3>
+                        Address: <span>{data.address}</span>
+                      </h3>
+                      <h3>
+                        Phone: <span>{data.phoneNumber}</span>
+                      </h3>
+                      <h3>
+                        Email:<span> {data.email}</span>
+                      </h3>
+                    </div>
+                    <div className="reservation-right-colum">
+                      <h3>
+                        Check In: <span>{data.checkIn}</span>
+                      </h3>
+                      <h3>
+                        Check Out: <span>{data.checkOut}</span>
+                      </h3>
+                      <h3>
+                        Room Name: <span>{data.roomName}</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="btns-holder-style">
+                    <div className="btn-close-container">
+                      <button
+                        className="btn-close"
+                        key={data.id}
+                        onClick={() => {
+                          this.updateReservation(data.id);
+                        }}
+                      >
+                        Update
+                      </button>
+                    </div>
+                    <div className="btn-close-container">
+                      <button
+                        className="btn-close"
+                        key={data.id}
+                        onClick={() => {
+                          this.deleteReservation(data.id);
+                        }}
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="reservation-img">
+            <img
+              src="https://res.cloudinary.com/duprwuo4j/image/upload/v1581112022/imgs_starwars/imgs/travel_vtuzfu.png"
+              alt="Travel Info"
+            />
+          </div>
+        </div>
       </div>
     );
   }

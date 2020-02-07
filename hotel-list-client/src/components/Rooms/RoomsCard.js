@@ -21,7 +21,8 @@ class RoomCards extends Component {
       address: "",
       card: "",
       cvc: "",
-      date: "",
+      checkIn: "",
+      checkOut: "",
       roomName: ""
     }
   };
@@ -348,11 +349,18 @@ class RoomCards extends Component {
                                 value={this.state.formInputs.cvc}
                                 onChange={this.handleChange}
                               />
-                              <label htmlFor="date">Date</label>
+                              <label htmlFor="checkIn">CheckIn</label>
                               <input
                                 type="text"
-                                id="date"
-                                value={this.state.formInputs.date}
+                                id="checkIn"
+                                value={this.state.formInputs.checkIn}
+                                onChange={this.handleChange}
+                              />
+                              <label htmlFor="checkOut">checkOut</label>
+                              <input
+                                type="text"
+                                id="checkOut"
+                                value={this.state.formInputs.checkOut}
                                 onChange={this.handleChange}
                               />
                               <label htmlFor="roomName">roomName</label>
@@ -367,6 +375,8 @@ class RoomCards extends Component {
                           </div>
                         </div>
                       </div>
+                      <br />
+                      <br />
                       <div className="modal-footer">
                         <div className="btn-close-container">
                           <button

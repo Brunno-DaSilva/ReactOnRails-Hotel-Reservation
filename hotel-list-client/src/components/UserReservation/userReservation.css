@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Marcellus&display=swap");
+
+/* * {
+  border: solid 1px red;
+} */
+.user-reservation-wrapper {
+  width: 100vw;
+  min-height: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-reservation-title {
+  margin-top: -30%;
+}
+.user-reservation-title h1 {
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.7rem;
+  margin-bottom: 4rem;
+  color: #172243;
+  text-align: center;
+}
+.col-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reservation-img img {
+  width: 35vw;
+}
+
+/************************************************
+*               Rooms Cards   
+***********************************************/
+.user-reservation-container {
+  background-color: #f8f4cc;
+  border-radius: 4px;
+  z-index: 100;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.user-reservation-details {
+  font-family: "Quicksand", sans-serif;
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem;
+}
+
+.reservation-data {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user-reservation-details div h2 {
+  font-family: "Quicksand", sans-serif;
+  color: #394360;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+.user-reservation-details div h2 span {
+  font-family: "Quicksand", sans-serif;
+  color: #22315e;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  border-bottom: 5px solid #ebdc58;
+}
+
+.reservation-left-colum h3,
+.reservation-right-colum h3 {
+  font-size: 1.2rem;
+  color: #394360;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+.reservation-left-colum h3 span,
+.reservation-right-colum h3 span {
+  color: #929396;
+  font-weight: bolder;
+}
+
+.btn-more-info-holder,
+.btn-close {
+  margin-top: 1.5rem;
+}
+
+.btn-more-info,
+.btn-close {
+  height: auto;
+  padding: 1.2rem;
+  background-color: #22315e;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.btn-more-info:hover,
+.btn-close:hover {
+  color: #ebdc58;
+  cursor: pointer;
+}
+
+.btns-holder-style {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*******************************
+  *    END - Rooms Cards   
+  ********************************/

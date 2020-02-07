@@ -3,6 +3,7 @@ import HotelServices from "../HotelServices/HotelServices";
 import UserReservation from "../UserReservation/UserReservation";
 import Navbar from "../Navbar/Navbar";
 import LandingPage from "../LandingPage/LandingPage";
+import Room from "../Rooms/Room";
 
 class Header extends Component {
   render() {
@@ -10,11 +11,10 @@ class Header extends Component {
       <div>
         <header>
           <Navbar />
-
           <LandingPage />
         </header>
         <HotelServices />
-        <UserReservation />
+        <Room />
       </div>
     );
   }

@@ -105,7 +105,6 @@ class Room extends Component {
     return (
       <div className="container">
         <RoomsCard content={this.state.roomInfo} />
-        <UserReservation />
       </div>
     );
   }

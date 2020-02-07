@@ -27,6 +27,11 @@ export default class Navbar extends Component {
               </NavLink>
             </div>
             <div>
+              <NavLink to="/userReservation" className="btn-match btn-effect">
+                User Reservation
+              </NavLink>
+            </div>
+            <div>
               <NavLink to="/about" className="btn-match btn-effect">
                 About
               </NavLink>
