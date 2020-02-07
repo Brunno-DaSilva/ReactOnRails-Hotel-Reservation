@@ -9,11 +9,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Header />
       <HotelServices />
-      <Room />
       <UserReservation />
-      <Footer />
     </div>
   );
 }
