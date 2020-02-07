@@ -22721,3 +22721,272 @@ Processing by HotelRoomsController#index as */*
 Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.3ms | Allocations: 3314)
 
 
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:43:28 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.4ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.4ms | Allocations: 3314)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:43:45 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 752)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:43:45 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.2ms | Allocations: 3314)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:44:07 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.4ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms | Allocations: 752)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:44:13 -0600
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (1.9ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 1.9ms | Allocations: 3314)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:48:22 -0600
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:48:22 -0600
+Processing by UserReservationsController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUserReservation Load (0.3ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Processing by HotelRoomsController#index as */*
+Completed 200 OK in 66ms (Views: 50.4ms | ActiveRecord: 0.3ms | Allocations: 1870)
+
+
+  [1m[36mHotelRoom Load (3.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 3.2ms | Allocations: 3546)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:49:13 -0600
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:49:13 -0600
+Processing by UserReservationsController#index as */*
+Processing by HotelRoomsController#index as */*
+  [1m[36mUserReservation Load (0.3ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  [1m[36mHotelRoom Load (0.3ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 1580)
+
+
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.3ms | Allocations: 3976)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:49:48 -0600
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:49:48 -0600
+Processing by HotelRoomsController#index as */*
+Processing by UserReservationsController#index as */*
+  [1m[36mHotelRoom Load (0.4ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  [1m[36mUserReservation Load (0.1ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.4ms | Allocations: 4022)
+
+
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 3884)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:50:54 -0600
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:50:54 -0600
+Processing by UserReservationsController#index as */*
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.4ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.4ms | Allocations: 3314)
+
+
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.2ms | Allocations: 4289)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:51:41 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:51:41 -0600
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 987)
+
+
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.4ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.4ms | Allocations: 3314)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:52:45 -0600
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:52:45 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+Processing by HotelRoomsController#index as */*
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+  [1m[36mHotelRoom Load (0.6ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 1327)
+
+
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.6ms | Allocations: 3399)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:53:00 -0600
+Started GET "/hotel_rooms" for ::1 at 2020-02-06 23:53:00 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.1ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+Processing by HotelRoomsController#index as */*
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+  [1m[36mHotelRoom Load (0.3ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 1340)
+
+
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 3580)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-06 23:59:20 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (1.7ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 1.7ms | Allocations: 784)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:02:41 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.3ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:02:51 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.1ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:07:26 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:10:05 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.3ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:10:20 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:15:01 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.6ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.6ms | Allocations: 753)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:16:04 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:26:15 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.9ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 9.4ms | ActiveRecord: 0.9ms | Allocations: 785)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:26:24 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.1ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:26:28 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.1ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:27:03 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.1ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:28:46 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:30:16 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:32:20 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (1.7ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.7ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:32:45 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.5ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:33:30 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.6ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.6ms | Allocations: 753)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:34:38 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.1ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 752)
+
+
+Started GET "/user_reservations" for ::1 at 2020-02-07 00:34:45 -0600
+Processing by UserReservationsController#index as */*
+  [1m[36mUserReservation Load (0.2ms)[0m  [1m[34mSELECT "user_reservations".* FROM "user_reservations"[0m
+  ↳ app/controllers/user_reservations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 752)
+
+

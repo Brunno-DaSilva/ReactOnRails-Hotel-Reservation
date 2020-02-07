@@ -15,7 +15,6 @@ class HotelRouter extends React.Component {
   render() {
     return (
       <HashRouter>
-        <Header />
         <Route path="/" component={App} />
         <Route path="/room" component={Room} />
         <Route path="/userReservation" component={UserReservation} />
