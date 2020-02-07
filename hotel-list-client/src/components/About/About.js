@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./about.css";
+import AboutThisApp from "./AboutThisApp";
 
 export default class About extends Component {
   render() {
@@ -245,6 +246,8 @@ export default class About extends Component {
             </div>
           </div>
         </div>
+
+        <AboutThisApp />
       </section>
     );
   }

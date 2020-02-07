@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./about.css";
+import "./aboutThisApp.css";
 
 export default class AboutThisApp extends Component {
   render() {
     return (
       <section id="aboutMe" classNameName="container-about" tabindex="-1">
-        <div className="overlay-about"></div>
+        <div className="overlay-about-this"></div>
         <div className="title-about">
           <h1>
             About
@@ -15,29 +15,42 @@ export default class AboutThisApp extends Component {
           </h1>
         </div>
         <div className="intro-container-about">
-          <div className="left-content">
-            <div className="left-container-title">
+          <div className="left-content-this">
+            <div className="left-container-title-this">
               <h3>
-                I am a Web Developer
+                React on Rails
                 <br />
-                Based in Dallas, Tx
+                Hotel Reservation System
               </h3>
             </div>
             <div className="left-container-text">
-              <p>I am a Front-End Developer with Full-Stack exposure</p>
               <p>
-                An IT professional with 6 years of experience in different
-                IT-related fields; from Application Support, to server
-                configuration, and Data Analysis
+                Full-stack Application featuring Ruby, Rails, Postgress, and
+                React.
+              </p>
+              <p>
+                Fully functional and interactive, this web application allows
+                users to see a list of hotel's rooms, inspect information and
+                reserve the room. Additionally, the user can see, update, and
+                delete reservations.
               </p>
             </div>
           </div>
           <div className="right-content">
             <img
-              src="https://res.cloudinary.com/duprwuo4j/image/upload/v1578605373/imgs_starwars/imgs/80195726_10156948905838597_8993168142045806592_n_bylsfs.jpg"
-              alt="This is my Family"
+              id="img2"
+              src="https://res.cloudinary.com/duprwuo4j/image/upload/v1581091889/imgs_starwars/imgs/Zilnai-logo2_xazqwf.png"
+              alt="Zilnai Reservations"
             />
           </div>
+        </div>
+        <div className="sub-title-this">
+          <h1>
+            Development
+            <span className="span-one">
+              <span className="span-two">Phase</span>
+            </span>
+          </h1>
         </div>
         <div className="text-area">
           <div className="text-one">
@@ -90,159 +103,6 @@ export default class AboutThisApp extends Component {
               the latest front- and back-end programming languages, tools, and
               methodologies.
             </p>
-          </div>
-        </div>
-
-        <div className="sub-title">
-          <h1>
-            Some
-            <span className="span-one">
-              <span className="span-two">Projects</span>
-            </span>
-          </h1>
-        </div>
-        <div className="projects">
-          <div className="card-one">
-            <div className="card">
-              <div className="card-image-one"></div>
-              <div className="card-text">
-                <span className="demo">
-                  <a
-                    href="https://dasilvabrunotexas.github.io/project_1/index.html"
-                    target="_blank"
-                  >
-                    DEMO
-                  </a>
-                </span>
-                <h2>Learn & Play</h2>
-                <p>
-                  It is a platform where children at the age of 3-8 can learn
-                  while playing Drag&Drop Grames.
-                </p>
-              </div>
-              <div className="card-stats">
-                <div className="stat">
-                  <div className="value">HTML/CSS</div>
-                  <div className="type">JavaScript</div>
-                </div>
-                <div className="stat border">
-                  <div className="value">jQuery</div>
-                  <div className="type">jQuery-UI</div>
-                </div>
-                <div className="stat">
-                  <div className="value">Illustrator</div>
-                  <div className="type">Bootstrap</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="card-two">
-            <div className="card">
-              <div className="card-image-two"></div>
-              <div className="card-text">
-                <span className="demo">
-                  <a
-                    href="https://star-wars-heroes-app.herokuapp.com/"
-                    target="_blank"
-                  >
-                    DEMO
-                  </a>
-                </span>
-                <h2>Star Wars Heroes</h2>
-                <p>
-                  A full-stack web application. Users can view, edit
-                  informations of the most iconic Star Wars heroes. Also, they
-                  can create their own characters.
-                </p>
-              </div>
-              <div className="card-stats">
-                <div className="stat">
-                  <div className="value">React</div>
-                  <div className="type">JSX</div>
-                </div>
-                <div className="stat border">
-                  <div className="value">JSON</div>
-                  <div className="type">SWAPI-API</div>
-                </div>
-                <div className="stat">
-                  <div className="value">Express</div>
-                  <div className="type">MongoDB</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="card-three">
-            <div className="card">
-              <div className="card-image-three"></div>
-              <div className="card-text">
-                <span className="demo">
-                  <a
-                    href="https://youtube-api-learning-app.herokuapp.com/#/youtubeList"
-                    target="_blank"
-                  >
-                    DEMO
-                  </a>
-                </span>
-                <h2>YouTube DEVLearn</h2>
-                <p>
-                  A learning App for Web developers.It uses a Youtube API call
-                  to fetch and display a list of tutorials based on the user's
-                  learning preferences.
-                </p>
-              </div>
-              <div className="card-stats">
-                <div className="stat">
-                  <div className="value">React</div>
-                  <div className="type">Express</div>
-                </div>
-                <div className="stat border">
-                  <div className="value">MongoDB</div>
-                  <div className="type">Mongoose</div>
-                </div>
-                <div className="stat">
-                  <div className="value">YouTubeAPI</div>
-                  <div className="type">Bootstrap</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="card-two">
-            <div className="card">
-              <div className="card-image-four"></div>
-              <div className="card-text">
-                <span className="demo">
-                  <a
-                    href="https://star-wars-heroes-app.herokuapp.com/"
-                    target="_blank"
-                  >
-                    DEMO
-                  </a>
-                </span>
-                <h2>Hotel Reservation</h2>
-                <p>
-                  A full-stack web application built with React on Rails stack.
-                  A CRUD application which provides users with a option to
-                  reserve, delete, and update a room.
-                </p>
-              </div>
-              <div className="card-stats">
-                <div className="stat">
-                  <div className="value">React</div>
-                  <div className="type">On Rails</div>
-                </div>
-                <div className="stat border">
-                  <div className="value">Ruby</div>
-                  <div className="type">JavaScript</div>
-                </div>
-                <div className="stat">
-                  <div className="value">Postman</div>
-                  <div className="type">PostgreSQL</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
