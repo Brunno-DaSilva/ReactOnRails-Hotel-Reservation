@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./rooms.css";
 import "font-awesome/css/font-awesome.min.css";
 import RoomsCard from "./RoomsCard";
+import UserReservation from "../UserReservation/UserReservation";
 
 class Room extends Component {
   state = {
@@ -104,6 +105,7 @@ class Room extends Component {
     return (
       <div className="container">
         <RoomsCard content={this.state.roomInfo} />
+        <UserReservation />
       </div>
     );
   }

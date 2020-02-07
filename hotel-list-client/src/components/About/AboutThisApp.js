@@ -6,7 +6,7 @@ export default class AboutThisApp extends Component {
     return (
       <section id="aboutMe" classNameName="container-about" tabindex="-1">
         <div className="overlay-about-this"></div>
-        <div className="title-about">
+        <div className="title-about-this">
           <h1>
             About
             <span className="span-one">
@@ -47,8 +47,8 @@ export default class AboutThisApp extends Component {
         <div className="sub-title-this">
           <h1>
             Development
-            <span className="span-one">
-              <span className="span-two">Phase</span>
+            <span className="span-one-this">
+              <span className="span-two-this">Phase</span>
             </span>
           </h1>
         </div>
