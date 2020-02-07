@@ -40,6 +40,7 @@ class UserReservationsController < ApplicationController
   def destroy
     # @user_reservation.destroy
     userReservation = UserReservation.find(params[:id])
+    userReservation.destroy()
     render(status: 204)
   end
 
@@ -51,6 +52,6 @@ class UserReservationsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_reservation_params
-      params.require(:user_reservation).permit(:userName, :phoneNumber, :email, :address, :card, :cvc, :checkIn, :checkOut, :roomName)
+      params.required(:user_reservation).permit(:userName, :phoneNumber, :email, :address, :card, :cvc, :checkIn, :checkOut, :roomName)
     end
 end

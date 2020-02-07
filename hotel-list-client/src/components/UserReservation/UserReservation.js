@@ -2,7 +2,17 @@ import React, { Component } from "react";
 
 class UserReservation extends Component {
   state = {
-    userReservationData: []
+    userReservationData: [],
+    formInput: {
+      userName: "",
+      phoneNumber: "",
+      email: "",
+      address: "",
+      card: "",
+      cvc: "",
+      date: "",
+      roomName: ""
+    }
   };
 
   // Display and Close Room information
@@ -38,6 +48,13 @@ class UserReservation extends Component {
     });
   }
 
+  updateReservation = event => {
+    const updateInput = Object.assign(this.state.formInputs, {
+      [event.target.id]: event.target.value
+    });
+    this.setState(updateInput);
+  };
+
   render() {
     console.log(this.state.userReservationData);
     return (
@@ -49,6 +66,16 @@ class UserReservation extends Component {
               <h3>{data.cvc}</h3>
               <p>{data.date}</p>
               <small>{data.roomName}</small>
+              <div>
+                <button
+                  key={data.id}
+                  onClick={() => {
+                    this.updateReservation(data.id);
+                  }}
+                >
+                  Update
+                </button>
+              </div>
               <div>
                 <button
                   key={data.id}

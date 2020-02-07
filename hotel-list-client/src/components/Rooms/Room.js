@@ -68,13 +68,6 @@ class Room extends Component {
 
   //Form information
 
-  handleChange = event => {
-    const updateInput = Object.assign(this.state.formInputs, {
-      [event.target.id]: event.target.value
-    });
-    this.setState(updateInput);
-  };
-
   handleSubmit = event => {
     event.preventDefault();
     fetch("http://localhost:3000/user_reservations", {

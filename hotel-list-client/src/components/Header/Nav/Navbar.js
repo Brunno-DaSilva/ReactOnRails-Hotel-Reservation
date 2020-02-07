@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import App from "./";
 import "../Nav/navbar.css";
 
 class Navbar extends Component {
@@ -7,31 +9,47 @@ class Navbar extends Component {
       <header>
         <div className="navbar">
           <div className="navbar-items">
-            <div className="logo btn-match btn-effect">
-              <h1>
-                Z<span>I</span>
-              </h1>
-            </div>
-            <div>
-              <a className="btn-match btn-effect" href="#">
-                Home
-              </a>
-            </div>
-            <div>
-              <a className="btn-match btn-effect" href="#">
-                Rooms
-              </a>
-            </div>
-            <div>
-              <a className="btn-match btn-effect" href="#">
-                About
-              </a>
-            </div>
-            <div>
-              <a className="btn-match btn-effect" href="#">
-                Contact
-              </a>
-            </div>
+            <Router>
+              <div className="logo btn-match btn-effect">
+                <Link to="/">
+                  <h1>
+                    Z<span>I</span>
+                  </h1>
+                </Link>
+              </div>
+
+              <div>
+                <Link to="/" className="btn-match btn-effect" href="#">
+                  Home
+                </Link>
+              </div>
+              <div>
+                <Link to="/rooms" className="btn-match btn-effect" href="#">
+                  Rooms
+                </Link>
+              </div>
+              <div>
+                <Link to="/about" className="btn-match btn-effect" href="#">
+                  About
+                </Link>
+              </div>
+              <div>
+                <Link to="/contact" className="btn-match btn-effect" href="#">
+                  Contact
+                </Link>
+              </div>
+              {/* <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/dashboard">
+                  <Dashboard />
+                </Route>
+              </Switch> */}
+            </Router>
           </div>
         </div>
 
