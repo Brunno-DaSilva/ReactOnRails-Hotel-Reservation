@@ -52,25 +52,207 @@ export default class AboutThisApp extends Component {
             </span>
           </h1>
         </div>
-        <div className="text-area">
+
+        <div className="about-container">
+          <div className="text-area-one">
+            <h4>App Concept: </h4>
+            <p>
+              Full-stack react-on-rails Hotel reservation system application.
+              Fully functional and interactive, this web application allows
+              users to see a list of hotel's room displayed as cards, inspect
+              rooms information and reserve the room. The user also can edit and
+              save a reservation, delete an existent reservation.
+            </p>
+          </div>
+          <div className="text-area-two">
+            <h4>Technologies Used:</h4>
+            <div className="organize-links">
+              <div className="skills-left-col">
+                <p>React</p>
+                <p>Rails</p>
+
+                <p>Ruby</p>
+                <p>PostgreSQL</p>
+
+                <p>JS</p>
+                <p>CSS</p>
+              </div>
+
+              <div className="skills-right-col">
+                <p>FontAwesome</p>
+                <p>Cloudinary</p>
+
+                <p>Adobe Illustrator</p>
+                <p>Image retrieved from Unsplash and unDraw</p>
+                <p>
+                  Image credits:
+                  <a href="https://unsplash.com/">Unsplash.com </a>
+                  <a href="https://undraw.co/"> unDraw.co</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-area-three">
+            <h4>Approach: </h4>
+            <p>
+              I had a defined idea of what I was looking for. A hotel
+              reservation system that provides users with a variety of room
+              types, allowing the user to view more information about the rooms
+              and to reserve that room, also providing a place where the user
+              can see their booked reservation, delete and update at the same
+              place. Additionally, I wanted to provide the user with the ability
+              to search for the room and filter by some sort of criteria, which
+              I had to set as a stretch goal due to the small deadline for this
+              app.
+            </p>
+            <p>
+              I am a super visual person, so I like to start my projects by
+              designing the application wireframe on my GA draw handbook with a
+              pencil, nothing too fancy but for a visual person it makes a whole
+              lot of difference, I feel like I have a goal to meet, like when I
+              am doing a mockup of some website, the design is layout for me I
+              just need to follow the patterns. Once that part is completed I
+              start thinking about some little details that would bring
+              character to my projects, like a funny or meaningful name or a
+              logo, or changing the icon on the cursor when the user approaches
+              a certain area of my application, this character can be seen
+              throughout the entire application (like an easter egg, except I am
+              the only one who knows about it lol), this project I decided to
+              create the logo and the name based on my sons and wife's name
+              after I was playing around with a string reverse challenge. The
+              hotel name was Zilnai, can you guess what my wife and son's names
+              are? After this, I jumped into the design and develop my back-end
+              and my client component structure.
+            </p>
+          </div>
+          <div className="text-area-four">
+            <h4>Challenges:</h4>
+            <p>
+              Delete method and update methods were not properly working as I
+              would have to refresh the page to see changes.
+            </p>
+            <p>
+              Then I learned a valuable lesson about state management. I had
+              successfully tested my rails DELETE route in postman, once I
+              ensured that everything was set the way it should be, I move the
+              client development phase. Inside my UserReservation component, I
+              have created a method called deleteReservation() and passed two
+              variables -id and index- by initiated the fetch request and
+              passing the id as template literals I would ensure that I was
+              getting a unique id and not some other data. In my promes, I set
+              the state of the userReservationData array (where the user data
+              would be stored) to slice anything between the two specified
+              indexes, which results in the specific reservation ID being
+              deleted. All good, up to the point that I map over my reservation
+              data passing an arrow function with the user's reservation
+              information, mainly due to the fact that I passed only one
+              variable called data and omitted index on my function, the delete
+              button would only work if the state of the application were
+              refreshed, otherwise, it would not identify what the index of the
+              item being deleted. After I have added a second variable to the
+              map function and called it on my onClick alongside with data.id it
+              worked properly.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div className="wireFrame">
+          <div>
+            <h4>Wire Frame</h4>
+          </div>
+          <div className="img-one">
+            <div>
+              <img
+                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/home_dobrhe.png"
+                alt="ONE"
+              />
+            </div>
+            <div className="wireframe-text">
+              <p>Home Page Concept</p>
+            </div>
+          </div>
+          <div className="img-two">
+            <div className="wireframe-text">
+              <p>See All Heroes Concept</p>
+            </div>
+            <div>
+              <img
+                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/heroesPage_fig7fo.png"
+                alt="TWO"
+              />
+            </div>
+          </div>
+          <div className="img-three">
+            <div>
+              <img
+                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/newPage_exp0jw.png"
+                alt="THREE"
+              />
+            </div>
+            <div className="wireframe-text">
+              <p>New Characters Page</p>
+            </div>
+          </div>
+          <div className="img-four">
+            <div className="wireframe-text">
+              <p>About this App Page</p>
+            </div>
+
+            <div>
+              <img
+                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/about_fqmkao.png"
+                alt="four"
+              />
+            </div>
+          </div>
+          <div className="img-five">
+            <div>
+              <img
+                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/about_fqmkao.png"
+                alt="five"
+              />
+            </div>
+            <div className="wireframe-text">
+              <p> Heroes Details Page</p>
+            </div>
+          </div>
+          <div className="img-six">
+            <div>
+              <a
+                target="_blank"
+                href="https://s3.amazonaws.com/assets.mockflow.com/app/sitemap/export/Me04bc8cca97e7a5732daa232a00698b11574872896900.png"
+              >
+                <img
+                  src="https://s3.amazonaws.com/assets.mockflow.com/app/sitemap/export/Me04bc8cca97e7a5732daa232a00698b11574872896900.png"
+                  alt="six"
+                />
+              </a>
+            </div>
+            <div className="wireframe-text">
+              <p> Site Development RoadMap</p>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="text-area">
           <div className="text-one">
             <p className="icon-holder">
               <i className="fa fa-heart"></i>
             </p>
             <p className="text-holder">
-              I am particularly passionate about my family, well designed, clean
-              coded-front-to-back-web applications, to serve poor communities in
-              my spare time, and to drink coffee
-              <i className="fa fa-coffee"></i>
+              Fully functional and interactive, this web application allows
+              users to see a list of hotel's rooms, inspect information and
+              reserve the room. Additionally, the user can see, update, and
+              delete reservations.
             </p>
           </div>
 
           <div className="text-two">
             <p className="text-holder">
-              A perfectly accomplished day for me is when I spend some time with
-              my son and wife, I learn something new, and when I debug/develop
-              something awesome, all of this accompanied with a nice warm cup of
-              coffee <i className="fa fa-mug-hot"></i>
+              <span>Technologies:</span> React, Ruby, Rails,Postgress, CSS,
+              FontAwesome, Cloudinary, Adobe Illustrator, Image credits:
+              https://undraw.co/
             </p>
             <p className="icon-holder">
               <i className="fa fa-check-circle"></i>
@@ -81,30 +263,21 @@ export default class AboutThisApp extends Component {
               <i className="fa fa-handshake-o"></i>
             </p>
             <p className="text-holder">
-              My previous experiences as a full-time missionary and 6+ years in
-              IT application support, not only reflects my passions for
-              technology and care for people but taught me how to approach every
-              situation and individual as unique and how to develop a
-              well-organized strategy to problem solve.
+              <span>Approach: </span> 
             </p>
           </div>
 
-          <div className="text-four">
-            <p className="icon-holder">
-              <i className="fa fa-laptop"></i>
-            </p>
+          <div className="text-two">
             <p className="text-holder">
-              I am always searching for self-improvement. So, I completed a
-              <span>
-                24-week, 500-hour full-stack Software Engeneering bootcamp at
-                General Assembly
-              </span>
-              . It was conducted in a remote setting, providing experience with
-              the latest front- and back-end programming languages, tools, and
-              methodologies.
+              <span>Stretch Goal: </span> I want to allow the user to log in, to
+              search or filter for a specific room, and implement a secure
+              credit card form.
+            </p>
+            <p className="icon-holder">
+              <i className="fa fa-check-circle"></i>
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
     );
   }

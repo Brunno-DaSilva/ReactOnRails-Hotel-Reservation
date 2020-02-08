@@ -110,14 +110,14 @@ section {
 }
 
 .left-content-this h3 {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 2.5rem;
   color: var(--nave-light-blue);
   text-align: left;
 }
 
 .left-content-this p {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.3rem;
   color: var(--gray-neutral-color);
   text-align: left;
@@ -132,6 +132,7 @@ section {
 **************************/
 
 .sub-title-this h1 {
+  font-family: "Quicksand", sans-serif;
   color: #535b75;
   font-size: 4rem;
   letter-spacing: 4px;
@@ -141,209 +142,150 @@ section {
   transform: rotate(3deg);
   z-index: 9;
 }
-.text-area {
+/*//////////////////////////////////
+//          ABOUT THIS APP BODY
+//////////////////////////////////*/
+
+.about-container {
+  font-family: "Quicksand", sans-serif;
+  color: var(--cards-bg);
+  padding-top: 2vh;
+  width: 90vw;
+  min-height: 100vh;
+  background-color: #f8f4cc;
+  border-radius: 8px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
-  width: 98%;
-  min-height: 100%;
-  margin: 3%;
-  margin-top: 4%;
-  z-index: 10;
+  z-index: 11;
 }
 
-.text-two,
-.text-three,
-.text-one {
+.text-area-one,
+.text-area-two,
+.text-area-three,
+.text-area-four {
+  width: 40vw;
+  min-height: 40vh;
+  font-size: 1.2rem;
+}
+
+.about-container h4 {
+  color: #213266 !important;
+  width: 25vw;
+  font-size: 2.3rem;
+  letter-spacing: 4px;
+  position: relative;
+  display: inline-block;
+  z-index: 90;
+}
+
+.about-container h4::before {
+  content: "";
+  border-bottom: 10px solid #cae8f190;
+  width: 85%;
+  position: absolute;
+  left: 0;
+  top: 60%;
+  z-index: -1;
+}
+.about-container p {
+  letter-spacing: 2px;
+  line-height: 40px;
+  color: #565f68;
+}
+
+.text-area-two .organize-links {
+  border: solid 1px red;
+  margin: 5px;
   display: flex;
   flex-direction: row;
-  min-width: 50%;
-  min-height: 20%;
+  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-/*******************
-//     Text One
-*********************/
-.text-one {
-  margin: 2%;
-  width: 80%;
-  background-color: var(--farting-yellow);
+.skills-left-col,
+.skills-right-col {
+  width: 49%;
+  height: auto;
+  color: #565f68;
+  line-height: 1.8rem;
+}
+
+.skills-left-col p,
+.skills-right-col p {
+  color: #565f68;
+  line-height: 1.8rem;
+}
+
+.skills-right-col p a {
+  text-decoration: none;
+  color: #4c8ccb;
+  z-index: 11;
+}
+.skills-right-col p a:hover {
+  cursor: pointer;
+  color: var(--detail-yellow-color);
+}
+
+.wireFrame {
+  width: 95vw;
+  min-height: 110vh;
   display: flex;
-  flex-direction: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   align-items: center;
-  align-content: flex-start;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.text-one .icon-holder {
-  width: 40%;
-  text-align: center;
-  padding: 10px;
+.wireFrame h4 {
+  font-family: starMono;
+  color: #dadada !important;
+  width: 40vw;
+  font-size: 5.3rem;
+  letter-spacing: 4px;
+  margin-top: 6%;
+  margin-bottom: 10%;
 }
 
-.text-one .text-holder {
-  width: 60%;
-  text-align: left;
-  padding: 10px;
-}
-
-.icon-holder i {
-  color: var(--nave-light-blue);
-  font-size: 13rem;
-}
-
-.text-holder {
-  font-size: 2rem;
-  text-align: right;
-  letter-spacing: 2px;
-  color: var(--nave-light-blue);
-}
-
-.text-holder i {
-  color: var(--light-font-color);
-}
-
-/*******************
-//     Text Two
-*********************/
-
-.text-two {
-  margin: 2%;
-  margin-left: 22%;
-  width: 80%;
-  background-color: var(--nave-light-blue);
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+.img-one,
+.img-three,
+.img-five {
+  width: 80vw;
+  height: 100vh;
+  margin: 5%;
   display: flex;
-  flex-direction: flex-end;
-  align-items: center;
-  align-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.text-two .icon-holder {
-  width: 30%;
-  text-align: center;
-  padding: 10px;
-}
-
-.text-two .text-holder {
-  width: 70%;
-  text-align: left;
-  padding: 10px;
-}
-
-.text-two .icon-holder i {
-  color: var(--farting-yellow);
-  font-size: 11rem;
-}
-
-.text-two .text-holder {
-  font-size: 2rem;
-  text-align: left;
-  letter-spacing: 2px;
-  padding-left: 80px;
-  color: var(--light-font-color);
-}
-
-.text-holder i {
-  color: var(--light-font-color);
-}
-
-/*******************
-//     Text Three
-*********************/
-
-.text-three {
-  margin: 2%;
-  width: 90%;
-  background-color: var(--farting-yellow);
+.img-two,
+.img-four,
+.img-six {
+  width: 80vw;
+  height: 100vh;
   display: flex;
-  flex-direction: flex-end;
-  align-items: center;
-  align-content: flex-start;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.text-three .icon-holder {
-  width: 35%;
-  text-align: center;
-  padding: 10px;
+.wireFrame img {
+  width: 800px;
+  height: auto;
 }
-
-.text-three .text-holder {
-  width: 65%;
-  text-align: left;
-  padding: 10px;
-}
-
-.icon-holder i {
-  color: var(--nave-light-blue);
-  font-size: 13rem;
-}
-
-.text-holder {
-  font-size: 2rem;
-  text-align: right;
-  letter-spacing: 2px;
-  color: var(--nave-light-blue);
-}
-
-.text-holder i {
-  color: var(--light-font-color);
-}
-
-/*******************
-//    Text Four
-*********************/
-
-.text-four {
-  margin: 2%;
+.wireframe-text {
+  font-size: 4rem;
+  letter-spacing: 4px;
   margin-left: 10%;
-  width: 95%;
-  background-color: var(--nave-light-blue);
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  display: flex;
-  flex-direction: flex-end;
-  align-items: center;
-  align-content: flex-start;
+  margin-right: 10%;
 }
 
-.text-four .icon-holder {
-  width: 30%;
-  text-align: center;
-  padding: 10px;
-}
-
-.text-four .text-holder {
-  width: 70%;
-  text-align: left;
-  padding: 10px;
-}
-
-.text-four .icon-holder i {
-  color: var(--farting-yellow);
-  font-size: 13rem;
-}
-
-.text-four .text-holder {
-  font-size: 2rem;
-  text-align: left;
-  letter-spacing: 2px;
-  padding-left: 60px;
-  color: var(--light-font-color);
-}
-.text-four .text-holder span {
-  color: var(--farting-yellow);
-}
-
-.text-holder i {
-  color: var(--light-font-color);
-}
+/*//////////////////////////////////
+//     END - ABOUT
+//////////////////////////////////*/
 
 /*About this App override*/
 
