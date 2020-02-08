@@ -108,7 +108,7 @@
 }
 
 .contact {
-  background: var(--light-warm-color);
+  background: #f8f4cc;
   border-radius: 25px;
   width: 40vw;
 }
@@ -116,6 +116,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5px;
+  background-color: #f8f4cc;
 }
 .contact form input,
 .contact form textarea {

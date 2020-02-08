@@ -305,7 +305,7 @@
   text-align: center;
 }
 
-form {
+.modal-body form {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -316,7 +316,7 @@ form {
   border-radius: 8px;
 }
 
-input[type="text"] {
+.modal-body input[type="text"] {
   font-family: "Quicksand", sans-serif;
   text-align: left;
   width: 70%;
@@ -330,7 +330,7 @@ input[type="text"] {
   letter-spacing: 4px;
 }
 
-input[type="submit"] {
+.modal-body input[type="submit"] {
   flex-basis: 27%;
   font-family: "Quicksand", sans-serif;
   border: none;
@@ -344,12 +344,12 @@ input[type="submit"] {
   letter-spacing: 3px;
   margin-top: 2rem;
 }
-input[type="submit"]:hover {
+.modal-body input[type="submit"]:hover {
   cursor: pointer;
   color: #ebdc58;
 }
 
-label {
+.modal-body label {
   flex-basis: 71%;
   text-align: left;
   font-size: 1.3rem;
