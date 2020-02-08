@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import About from "./About";
 import "./aboutThisApp.css";
 
 export default class AboutThisApp extends Component {
@@ -157,127 +158,7 @@ export default class AboutThisApp extends Component {
           </div>
         </div>
         <br />
-        <div className="wireFrame">
-          <div>
-            <h4>Wire Frame</h4>
-          </div>
-          <div className="img-one">
-            <div>
-              <img
-                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/home_dobrhe.png"
-                alt="ONE"
-              />
-            </div>
-            <div className="wireframe-text">
-              <p>Home Page Concept</p>
-            </div>
-          </div>
-          <div className="img-two">
-            <div className="wireframe-text">
-              <p>See All Heroes Concept</p>
-            </div>
-            <div>
-              <img
-                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/heroesPage_fig7fo.png"
-                alt="TWO"
-              />
-            </div>
-          </div>
-          <div className="img-three">
-            <div>
-              <img
-                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/newPage_exp0jw.png"
-                alt="THREE"
-              />
-            </div>
-            <div className="wireframe-text">
-              <p>New Characters Page</p>
-            </div>
-          </div>
-          <div className="img-four">
-            <div className="wireframe-text">
-              <p>About this App Page</p>
-            </div>
-
-            <div>
-              <img
-                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/about_fqmkao.png"
-                alt="four"
-              />
-            </div>
-          </div>
-          <div className="img-five">
-            <div>
-              <img
-                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1574878114/imgs_starwars/imgs/about_fqmkao.png"
-                alt="five"
-              />
-            </div>
-            <div className="wireframe-text">
-              <p> Heroes Details Page</p>
-            </div>
-          </div>
-          <div className="img-six">
-            <div>
-              <a
-                target="_blank"
-                href="https://s3.amazonaws.com/assets.mockflow.com/app/sitemap/export/Me04bc8cca97e7a5732daa232a00698b11574872896900.png"
-              >
-                <img
-                  src="https://s3.amazonaws.com/assets.mockflow.com/app/sitemap/export/Me04bc8cca97e7a5732daa232a00698b11574872896900.png"
-                  alt="six"
-                />
-              </a>
-            </div>
-            <div className="wireframe-text">
-              <p> Site Development RoadMap</p>
-            </div>
-          </div>
-        </div>
-
-        {/* <div className="text-area">
-          <div className="text-one">
-            <p className="icon-holder">
-              <i className="fa fa-heart"></i>
-            </p>
-            <p className="text-holder">
-              Fully functional and interactive, this web application allows
-              users to see a list of hotel's rooms, inspect information and
-              reserve the room. Additionally, the user can see, update, and
-              delete reservations.
-            </p>
-          </div>
-
-          <div className="text-two">
-            <p className="text-holder">
-              <span>Technologies:</span> React, Ruby, Rails,Postgress, CSS,
-              FontAwesome, Cloudinary, Adobe Illustrator, Image credits:
-              https://undraw.co/
-            </p>
-            <p className="icon-holder">
-              <i className="fa fa-check-circle"></i>
-            </p>
-          </div>
-          <div className="text-three">
-            <p className="icon-holder">
-              <i className="fa fa-handshake-o"></i>
-            </p>
-            <p className="text-holder">
-              <span>Approach: </span> 
-            </p>
-          </div>
-
-          <div className="text-two">
-            <p className="text-holder">
-              <span>Stretch Goal: </span> I want to allow the user to log in, to
-              search or filter for a specific room, and implement a secure
-              credit card form.
-            </p>
-            <p className="icon-holder">
-              <i className="fa fa-check-circle"></i>
-            </p>
-          </div>
-        </div> */}
+        <About />
       </section>
     );
   }

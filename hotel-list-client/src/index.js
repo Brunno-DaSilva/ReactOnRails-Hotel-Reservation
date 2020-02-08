@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App";
 import Room from "./components/Rooms/Room";
 import UserReservation from "./components/UserReservation/UserReservation";
-import About from "./components/About/About";
+import AboutThisApp from "./components/About/AboutThisApp";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -18,7 +18,7 @@ class HotelRouter extends React.Component {
         <Route path="/home" component={App} />
         <Route path="/room" component={Room} />
         <Route path="/userReservation" component={UserReservation} />
-        <Route path="/about" component={About} />
+        <Route path="/aboutThisApp" component={AboutThisApp} />
         <Route path="/contact" component={Contact} />
         <Footer />
       </HashRouter>

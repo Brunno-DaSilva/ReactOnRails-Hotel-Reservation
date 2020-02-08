@@ -45,7 +45,7 @@ export default class Navbar extends Component {
             </div>
             <div>
               <NavLink
-                to="/about"
+                to="/aboutThisApp"
                 className="btn-match btn-effect"
                 activeClassName="main-nav-active"
               >

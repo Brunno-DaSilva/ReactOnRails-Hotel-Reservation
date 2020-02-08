@@ -198,7 +198,6 @@ section {
 }
 
 .text-area-two .organize-links {
-  border: solid 1px red;
   margin: 5px;
   display: flex;
   flex-direction: row;
