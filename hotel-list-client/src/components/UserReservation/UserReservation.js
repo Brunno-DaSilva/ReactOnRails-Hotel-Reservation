@@ -51,7 +51,7 @@ class UserReservation extends Component {
   }
 
   handleChange = event => {
-    const updateInput = Object.assign(this.state.formInputs, {
+    const updateInput = Object.assign(this.state.userReservationData, {
       [event.target.id]: event.target.value
     });
     this.setState(updateInput);
@@ -99,7 +99,7 @@ class UserReservation extends Component {
                     </div>
                   </div>
                   <div className="btns-holder-style">
-                    {/* <div className="btn-close-container">
+                    <div className="btn-close-container">
                       <button
                         className="btn-close"
                         key={data.id}
@@ -109,7 +109,7 @@ class UserReservation extends Component {
                       >
                         Update
                       </button>
-                    </div> */}
+                    </div>
                     <div className="btn-close-container">
                       <button
                         className="btn-close"

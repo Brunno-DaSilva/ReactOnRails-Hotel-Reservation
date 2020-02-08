@@ -58,7 +58,7 @@
 .wrapper-contact {
   box-shadow: 0 0 20px 0 #485e74b3;
   margin-bottom: 100px;
-  border-radius: 25px;
+  border-radius: 8px;
   background: var(--dark-font-color-title);
   margin-left: -5rem;
 }
@@ -109,7 +109,7 @@
 
 .contact {
   background: #f8f4cc;
-  border-radius: 25px;
+  border-radius: 5px;
   width: 40vw;
 }
 .contact form {

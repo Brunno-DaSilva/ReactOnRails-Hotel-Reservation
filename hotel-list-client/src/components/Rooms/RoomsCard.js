@@ -310,6 +310,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="userName"
+                                required=""
                                 value={this.state.formInputs.userName}
                                 onChange={this.handleChange}
                               />
@@ -317,6 +318,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="phoneNumber"
+                                required=""
                                 value={this.state.formInputs.phoneNumber}
                                 onChange={this.handleChange}
                               />
@@ -324,6 +326,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="email"
+                                required=""
                                 value={this.state.formInputs.email}
                                 onChange={this.handleChange}
                               />
@@ -332,6 +335,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="address"
+                                 required=""
                                 value={this.state.formInputs.address}
                                 onChange={this.handleChange}
                               />
@@ -339,6 +343,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="card"
+                                 required=""
                                 value={this.state.formInputs.card}
                                 onChange={this.handleChange}
                               />
@@ -346,6 +351,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="cvc"
+                                required=""
                                 value={this.state.formInputs.cvc}
                                 onChange={this.handleChange}
                               />
@@ -353,6 +359,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="checkIn"
+                                required=""
                                 value={this.state.formInputs.checkIn}
                                 onChange={this.handleChange}
                               />
@@ -360,6 +367,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="checkOut"
+                                 required=""
                                 value={this.state.formInputs.checkOut}
                                 onChange={this.handleChange}
                               />
@@ -367,6 +375,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="roomName"
+                                required=""
                                 value={this.state.formInputs.roomName}
                                 onChange={this.handleChange}
                               />
