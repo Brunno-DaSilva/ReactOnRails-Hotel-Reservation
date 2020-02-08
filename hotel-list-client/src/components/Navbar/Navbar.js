@@ -17,27 +17,47 @@ export default class Navbar extends Component {
             </div>
 
             <div>
-              <NavLink to="/home" className="btn-match btn-effect">
+              <NavLink
+                to="/home"
+                className="btn-match btn-effect"
+                activeClassName="main-nav-active"
+              >
                 Home
               </NavLink>
             </div>
             <div>
-              <NavLink to="/room" className="btn-match btn-effect">
+              <NavLink
+                to="/room"
+                className="btn-match btn-effect"
+                activeClassName="main-nav-active"
+              >
                 Rooms
               </NavLink>
             </div>
             <div>
-              <NavLink to="/userReservation" className="btn-match btn-effect">
+              <NavLink
+                to="/userReservation"
+                className="btn-match btn-effect"
+                activeClassName="main-nav-active"
+              >
                 User Reservation
               </NavLink>
             </div>
             <div>
-              <NavLink to="/about" className="btn-match btn-effect">
+              <NavLink
+                to="/about"
+                className="btn-match btn-effect"
+                activeClassName="main-nav-active"
+              >
                 About
               </NavLink>
             </div>
             <div>
-              <NavLink to="/contact" className="btn-match btn-effect">
+              <NavLink
+                to="/contact"
+                className="btn-match btn-effect"
+                activeClassName="main-nav-active"
+              >
                 Contact
               </NavLink>
             </div>

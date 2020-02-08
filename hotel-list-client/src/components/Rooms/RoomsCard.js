@@ -303,7 +303,7 @@ class RoomCards extends Component {
                         </div>
                       </div>
                       <div className="modal-body">
-                        <div className="top-info">
+                        <div>
                           <div>
                             <form onSubmit={this.handleSubmit}>
                               <label htmlFor="userName">Full Name</label>
@@ -363,7 +363,7 @@ class RoomCards extends Component {
                                 value={this.state.formInputs.checkOut}
                                 onChange={this.handleChange}
                               />
-                              <label htmlFor="roomName">roomName</label>
+                              <label htmlFor="roomName">Room Name</label>
                               <input
                                 type="text"
                                 id="roomName"

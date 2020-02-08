@@ -66,7 +66,7 @@ class UserReservation extends Component {
         </div>
         <div className="col-container">
           <div className="user-reservation-container">
-            {this.state.userReservationData.map(data => {
+            {this.state.userReservationData.map((data, i) => {
               return (
                 <div key={data.userName} className="user-reservation-details">
                   <div>
@@ -115,7 +115,7 @@ class UserReservation extends Component {
                         className="btn-close"
                         key={data.id}
                         onClick={() => {
-                          this.deleteReservation(data.id);
+                          this.deleteReservation(data.id, i);
                         }}
                       >
                         Delete

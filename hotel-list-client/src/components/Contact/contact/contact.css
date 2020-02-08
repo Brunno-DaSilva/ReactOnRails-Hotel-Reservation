@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+:root {
+  --main-bg: #343d46;
+  --color-light: #f7f4f4;
+  --color-light-gray: #a7adba;
+  --color-title: #6a7687;
+  --color-steal-blue: #9dc1d9;
+  --details-light-blue: #bee0ea;
+  --dark-font-color-title: #173f5f;
+  --base: #2b498b;
+  --nave-light-blue: #20639b;
+  --teal-green: #3caea3;
+  --farting-yellow: #f6d55c;
+  --laranja-orange: #ed553b;
+  --light-font-color: #e5f2fc;
+  --light-font-color-title: #c9dded;
+  --gray-neutral-color: #63717d;
+  --light-warm-color: #fafbfc;
+  --alert-success: #118506d3;
+  --error-pointers: #f71212d5;
+}
+
+/*******************************
+  *    END - Navigation Style    
+  *******************************/
+
+#contactme {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.contact-title h1 {
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.7rem;
+  margin-bottom: 4rem;
+  margin-top: -2rem;
+  color: #172243;
+  text-align: center;
+}
+.container-contact {
+  max-width: 70%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.wrapper-contact {
+  display: grid;
+  grid-template-columns: 1fr !important;
+}
+.wrapper-contact {
+  box-shadow: 0 0 20px 0 #485e74b3;
+  margin-bottom: 100px;
+  border-radius: 25px;
+  background: var(--dark-font-color-title);
+  margin-left: -5rem;
+}
+.wrapper-contact > * {
+  padding: 1.5em;
+}
+
+#contactme .titleContactMe {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 60px !important;
+  transform: rotate(2deg) !important;
+  margin-top: 0px;
+}
+
+.titleContactMe {
+  text-align: center;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 80px;
+  transform: rotate(2deg);
+  color: var(--nave-light-blue);
+  margin-bottom: 60px;
+}
+.contact-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-holder img {
+  width: 40vw;
+}
+.greet h3,
+.greet p {
+  color: var(--light-font-color);
+}
+.greet h3 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 1.8rem;
+}
+
+.greet h3 span {
+  color: var(--farting-yellow);
+  font-size: 1.8rem;
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: bold;
+}
+
+.contact {
+  background: var(--light-warm-color);
+  border-radius: 25px;
+  width: 40vw;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.contact form input,
+.contact form textarea {
+  width: 70%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #4f5050af;
+  color: #4f5050af;
+}
+
+#btn-form input {
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  width: 150px;
+  background: #22315e;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+  letter-spacing: 3px;
+}
+#btn-form input:hover {
+  cursor: pointer;
+  color: #ebdc58;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #118506d3;
+  color: #fff;
+  display: none;
+}
+
+.error i {
+  color: #f71212d5;
+  font-size: 6px;
+}
+
+.info-Bruno p {
+  color: var(--light-font-color-title);
+  font-size: 1.8rem;
+}
+
+.info-Bruno a {
+  color: var(--light-font-color-title);
+  padding: 10px;
+}
+
+.info-Bruno a:hover {
+  color: var(--farting-yellow);
+}
+
+@media (max-width: 750px) {
+  .wrapper-contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper-contact > * {
+    padding: 2em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}

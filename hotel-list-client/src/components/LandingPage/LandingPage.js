@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "./landingPage.css";
 
 export default class LandingPage extends Component {
@@ -15,7 +16,15 @@ export default class LandingPage extends Component {
               <h3>ZILNAI</h3>
               <p>Luxury Suites</p>
             </div>
-            <div className="btn-match btn-effect bold">Reserve</div>
+            <div className="btn-landing-page btn-match btn-effect bold">
+              <NavLink
+                className="btn-landing-page"
+                activeClassName="main-nav-active"
+                to="/room"
+              >
+                Reserve
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>

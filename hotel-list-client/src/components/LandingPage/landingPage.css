@@ -80,6 +80,18 @@
   opacity: 0.8;
 }
 
+.btn-landing-page {
+  background-color: transparent;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.btn-landing-page:focus {
+  outline: none;
+  color: #ffffff;
+}
+
 /*******************************
     *    END - LandingPage    
     *******************************/
