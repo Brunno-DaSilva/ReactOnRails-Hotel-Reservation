@@ -26,14 +26,14 @@ class UserReservationsController < ApplicationController
 
   # PATCH/PUT /user_reservations/1
   def update
-    # if @user_reservation.update(user_reservation_params)
-    #   render json: @user_reservation
-    # else
-    #   render json: @user_reservation.errors, status: :unprocessable_entity
-    # end
-    userReservation = UserReservation.find(params[:id])
-    userReservation.update(user_reservation_params)
-    render(json: {userReservation: userReservation})
+    if @user_reservation.update(user_reservation_params)
+      render json: @user_reservation
+    else
+      render json: @user_reservation.errors, status: :unprocessable_entity
+    end
+    # userReservation = UserReservation.find(params[:id])
+    # userReservation.update(user_reservation_params)
+    # render(json: {userReservation: userReservation})
   end
 
   # DELETE /user_reservations/1
