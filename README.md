@@ -18,7 +18,7 @@ save a reservation, delete an existent reservation.
     * CSS
     * FontAwesome
     * Cloudinary
-    * Adobe Illustrator
+    * Adobe Illustrator and Photoshop 
     * Image retrieved from Unsplash and unDraw:
         - Unsplash.com
         - unDraw.co
