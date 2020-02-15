@@ -60,4 +60,4 @@ item being deleted. After I have added a second variable to the
 map function and called it on my onClick alongside with data.id it
 worked properly.
 
-#### Demo: Heroku app
+##### Demo: Heroku app
