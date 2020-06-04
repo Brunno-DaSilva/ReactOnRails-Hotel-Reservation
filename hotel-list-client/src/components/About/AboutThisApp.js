@@ -5,7 +5,7 @@ import "./aboutThisApp.css";
 export default class AboutThisApp extends Component {
   render() {
     return (
-      <section id="aboutMe" classNameName="container-about" tabindex="-1">
+      <section id="aboutMe" className="container-about" tabIndex="-1">
         <div className="overlay-about-this"></div>
         <div className="title-about-this">
           <h1>

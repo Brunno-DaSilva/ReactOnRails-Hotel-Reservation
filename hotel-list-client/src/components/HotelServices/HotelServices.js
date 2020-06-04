@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "font-awesome/css/font-awesome.min.css";
 import "./font/flaticon.css";
 import "../HotelServices/hotelServices.css";
 
@@ -111,7 +110,7 @@ class HotelServices extends Component {
           </div>
         </div>
 
-        <div class="sub-title-util">
+        <div className="sub-title-util">
           <h1>Enjoy Our Utilities</h1>
 
           <div className="utilities-container">

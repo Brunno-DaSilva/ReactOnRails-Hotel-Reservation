@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import "./rooms.css";
-import "font-awesome/css/font-awesome.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBed,
+  faUsers,
+  faExpand,
+  faBan,
+  faHeart,
+  faPaw,
+} from "@fortawesome/free-solid-svg-icons";
+
 import Modal from "../Modal/Modal";
 import Reservation from "../Reservation/Reservation";
 
@@ -23,62 +32,62 @@ class RoomCards extends Component {
       cvc: "",
       checkIn: "",
       checkOut: "",
-      roomName: ""
-    }
+      roomName: "",
+    },
   };
 
   // Display and Close Room information
-  onClose = e => {
+  onClose = (e) => {
     this.setState({
-      show: false
+      show: false,
     });
   };
 
-  showModal = data => {
+  showModal = (data) => {
     this.setState({
       show: true,
-      currentModal: data.id
+      currentModal: data.id,
     });
   };
 
   // Display and Close Reservation form
 
-  showReservation = data => {
+  showReservation = (data) => {
     this.setState({
       showReservation: true,
-      currentReservation: data.id
+      currentReservation: data.id,
     });
   };
 
-  onCloseReservation = data => {
+  onCloseReservation = (data) => {
     this.setState({
       showReservation: true,
-      currentReservation: data.id
+      currentReservation: data.id,
     });
   };
   //Form information
 
-  handleChange = event => {
+  handleChange = (event) => {
     const updateInput = Object.assign(this.state.formInputs, {
-      [event.target.id]: event.target.value
+      [event.target.id]: event.target.value,
     });
     this.setState(updateInput);
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     fetch("http://localhost:3000/user_reservations", {
       body: JSON.stringify(this.state.formInputs),
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     })
-      .then(createdUserReservation => {
+      .then((createdUserReservation) => {
         return createdUserReservation.json();
       })
-      .then(jsonedUserReservation => {
+      .then((jsonedUserReservation) => {
         this.setState({
           formInputs: {
             userName: "",
@@ -89,15 +98,15 @@ class RoomCards extends Component {
             cvc: "",
             checkIn: "",
             checkOut: "",
-            roomName: ""
+            roomName: "",
           },
           userReservation: [
             jsonedUserReservation,
-            ...this.state.userReservation
-          ]
+            ...this.state.userReservation,
+          ],
         });
       })
-      .catch(error => console.log(error));
+      .catch((error) => console.log(error));
   };
 
   render() {
@@ -107,7 +116,7 @@ class RoomCards extends Component {
           <h1>Rooms</h1>
         </div>
 
-        {this.props.content.map(info => {
+        {this.props.content.map((info) => {
           return (
             <div className="rooms-card">
               <div className="left-col">
@@ -127,19 +136,25 @@ class RoomCards extends Component {
                 <div className="room-additional-info">
                   <div>
                     <p>
-                      <i className="fa fa-users"></i>
+                      <i>
+                        <FontAwesomeIcon icon={faUsers} />
+                      </i>
                       {info.capacity}
                     </p>
                   </div>
                   <div>
                     <p>
-                      <i className="fa fa-bed"></i>
+                      <i>
+                        <FontAwesomeIcon icon={faBed} />
+                      </i>
                       {info.roomType}
                     </p>
                   </div>
                   <div>
                     <p>
-                      <i class="fa fa-expand"></i>
+                      <i>
+                        <FontAwesomeIcon icon={faExpand} />
+                      </i>
                       {info.size}m²
                     </p>
                   </div>
@@ -147,7 +162,7 @@ class RoomCards extends Component {
                   <div className="btn-more-info-holder">
                     <button
                       className="btn-more-info"
-                      onClick={e => {
+                      onClick={(e) => {
                         this.showModal(info);
                       }}
                     >
@@ -207,19 +222,25 @@ class RoomCards extends Component {
                           <div className="bottom-info">
                             <div>
                               <p>
-                                <i className="fa fa-users"></i>
+                                <i>
+                                  <FontAwesomeIcon icon={faUsers} />
+                                </i>
                                 {info.capacity}
                               </p>
                             </div>
                             <div>
                               <p>
-                                <i className="fa fa-bed"></i>
+                                <i>
+                                  <FontAwesomeIcon icon={faBed} />
+                                </i>
                                 {info.roomType}
                               </p>
                             </div>
                             <div>
                               <p>
-                                <i class="fa fa-expand"></i>
+                                <i>
+                                  <FontAwesomeIcon icon={faExpand} />
+                                </i>
                                 {info.size}m²
                               </p>
                             </div>
@@ -249,22 +270,34 @@ class RoomCards extends Component {
                   <div>
                     {info.breakfast ? (
                       <p className="allowed">
-                        <i class="fa fa-cutlery"></i> Breakfast
+                        <i>
+                          <FontAwesomeIcon icon={faHeart} />
+                        </i>
+                        Breakfast
                       </p>
                     ) : (
                       <p className="not-allowed">
-                        <i class="fa fa-ban"></i> Breakfast
+                        <i>
+                          <FontAwesomeIcon icon={faBan} />
+                        </i>
+                        Breakfast
                       </p>
                     )}
                   </div>
                   <div>
                     {info.pets ? (
                       <p className="allowed">
-                        <i class="fa fa-paw"></i> Pets allowed
+                        <i>
+                          <FontAwesomeIcon icon={faPaw} />
+                        </i>
+                        Pets allowed
                       </p>
                     ) : (
                       <p className="not-allowed">
-                        <i class="fa fa-ban" aria-hidden="true"></i> No P e t s
+                        <i>
+                          <FontAwesomeIcon icon={faBan} ariaHidden="true" />
+                        </i>
+                        No P e t s
                       </p>
                     )}
                   </div>
@@ -272,7 +305,7 @@ class RoomCards extends Component {
                 <div className="btn-reserve-holder">
                   <button
                     className="btn-more-info"
-                    onClick={e => {
+                    onClick={(e) => {
                       this.showReservation(info);
                     }}
                   >
@@ -335,7 +368,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="address"
-                                 required=""
+                                required=""
                                 value={this.state.formInputs.address}
                                 onChange={this.handleChange}
                               />
@@ -343,7 +376,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="card"
-                                 required=""
+                                required=""
                                 value={this.state.formInputs.card}
                                 onChange={this.handleChange}
                               />
@@ -367,7 +400,7 @@ class RoomCards extends Component {
                               <input
                                 type="text"
                                 id="checkOut"
-                                 required=""
+                                required=""
                                 value={this.state.formInputs.checkOut}
                                 onChange={this.handleChange}
                               />

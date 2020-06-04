@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "font-awesome/css/font-awesome.min.css";
 import "../Modal/modal.css";
 
 class Modal extends Component {
