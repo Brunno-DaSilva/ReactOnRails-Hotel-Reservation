@@ -236,31 +236,32 @@ export default class About extends Component {
               <div className="card-text">
                 <span className="demo">
                   <a
-                    href="https://star-wars-heroes-app.herokuapp.com/"
+                    href="https://online-store-techfy.herokuapp.com/home"
                     target="_blank"
                   >
                     DEMO
                   </a>
                 </span>
-                <h2>Hotel Reservation</h2>
+                <h2>TechFy - Online Store</h2>
                 <p>
-                  A full-stack web application built with React on Rails stack.
-                  A CRUD application which provides users with a option to
-                  reserve, delete, and update a room.
+                  Fully functional and interactive, this web application allows
+                  users to see a list of products, see details about each
+                  product, add them to the cart, increment the number of items
+                  and buy the products utilizing PayPal.
                 </p>
               </div>
               <div className="card-stats">
                 <div className="stat">
                   <div className="value">React</div>
-                  <div className="type">On Rails</div>
+                  <div className="type">Node</div>
                 </div>
                 <div className="stat border">
-                  <div className="value">Ruby</div>
-                  <div className="type">JavaScript</div>
+                  <div className="value">FireBase</div>
+                  <div className="type">Paypall</div>
                 </div>
                 <div className="stat">
-                  <div className="value">Postman</div>
-                  <div className="type">PostgreSQL</div>
+                  <div className="value">HTML/CSS</div>
+                  <div className="type">JS</div>
                 </div>
               </div>
             </div>
