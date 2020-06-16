@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter, NavLink, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Room from "./components/Rooms/Room";
