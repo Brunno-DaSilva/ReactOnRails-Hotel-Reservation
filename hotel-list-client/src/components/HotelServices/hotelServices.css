@@ -136,23 +136,23 @@
   height: 64vh;
   overflow: hidden !important;
 }
-
-.offer-one img,
-.offer-two img,
-.offer-three img,
-.offer-four img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  filter: brightness(70%);
-  transition: transform 0.5s;
+.offer-one {
+  background-image: url("./img/hotelpool.jpg");
+  background-size: cover;
 }
 
-.offer-one img:hover,
-.offer-two img:hover,
-.offer-three img:hover,
-.offer-four img:hover {
-  transform: scale(1.2);
+.offer-two {
+  background-image: url("./img/dinner.jpg");
+  background-size: cover;
+}
+
+.offer-three {
+  background-image: url("./img/roomview.jpg");
+  background-size: cover;
+}
+.offer-four {
+  background-image: url("./img/relax.jpg");
+  background-size: cover;
 }
 
 .room-desc {
@@ -164,15 +164,36 @@
   margin: 1rem;
   padding: 0;
   position: absolute;
-  z-index: 90;
 }
 
-.room-desc p {
-  color: #f1f6fe;
+.room-offer-price {
+  color: #172243;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   font-weight: bolder;
+  z-index: 2 !important;
 }
+
+.room-offer-price::after {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: -1rem;
+  bottom: -0.25rem;
+  width: calc(100% + 2rem);
+  height: 3.2rem;
+  background: #f7eb82;
+  opacity: 0.5;
+  z-index: -1;
+  transform: scaleX(0.1);
+  transform-origin: left;
+  transition: ease-in-out 1s;
+}
+
+.offer-one:hover .room-offer-price::after {
+  transform: scaleX(1);
+}
+
 .room-desc p span {
   color: #f1f6fe;
   text-decoration: underline;

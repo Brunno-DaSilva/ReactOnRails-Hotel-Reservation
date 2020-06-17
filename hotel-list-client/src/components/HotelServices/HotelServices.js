@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import "./font/flaticon.css";
 import "../HotelServices/hotelServices.css";
-import imgOne from "./img/hotelpool.jpg";
-import imgTwo from "./img/dinner.jpg";
-import imgThree from "./img/roomview.jpg";
-import imgFour from "./img/relax.jpg";
 
 class HotelServices extends Component {
   render() {
@@ -116,33 +112,39 @@ class HotelServices extends Component {
 
         <div className="room-offers">
           <div className="offer-one">
-            <div className="offer-img-holder">
-              <img src={imgOne} />
-            </div>
-            <div>
-              <div className="room-desc">
-                <div>
-                  <p>
-                    <span> $360</span> per night
-                  </p>
-                </div>
-                <h3>Single Room</h3>
-              </div>
+            <div className="room-desc">
+              <p className="room-offer-price">
+                <span> $360</span> per night
+              </p>
+
+              <h3>Double Room</h3>
             </div>
           </div>
           <div className="offer-two">
-            <div>
-              <img src={imgTwo} />
+            <div className="room-desc">
+              <p className="room-offer-price">
+                <span> $680</span> per night
+              </p>
+
+              <h3>Family Room</h3>
             </div>
           </div>
           <div className="offer-three">
-            <div>
-              <img src={imgThree} />
+            <div className="room-desc">
+              <p className="room-offer-price">
+                <span> $480</span> per night
+              </p>
+
+              <h3>Double Room</h3>
             </div>
           </div>
           <div className="offer-four">
-            <div>
-              <img src={imgFour} />
+            <div className="room-desc">
+              <p className="room-offer-price">
+                <span> $380</span> per night
+              </p>
+
+              <h3>Single Room</h3>
             </div>
           </div>
         </div>
