@@ -142,4 +142,35 @@
 .offer-four img {
   width: 100%;
   height: auto;
+  filter: brightness(70%);
+}
+
+.room-desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  margin: 1rem;
+  padding: 0;
+  position: absolute;
+  z-index: 90;
+}
+
+.room-desc p {
+  color: #f1f6fe;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+}
+.room-desc p span {
+  color: #f1f6fe;
+  text-decoration: underline;
+}
+
+.room-desc h3 {
+  color: #f1f6fe;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
 }

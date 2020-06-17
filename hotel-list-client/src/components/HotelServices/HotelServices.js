@@ -119,6 +119,16 @@ class HotelServices extends Component {
             <div>
               <img src={imgOne} />
             </div>
+            <div>
+              <div className="room-desc">
+                <div>
+                  <p>
+                    <span> $360</span> per night
+                  </p>
+                </div>
+                <h3>Single Room</h3>
+              </div>
+            </div>
           </div>
           <div className="offer-two">
             <div>
