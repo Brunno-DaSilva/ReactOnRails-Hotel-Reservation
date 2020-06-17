@@ -117,3 +117,29 @@
   align-items: center;
   justify-content: center;
 }
+
+.room-offers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+  margin-top: 3rem;
+}
+
+.offer-one,
+.offer-two,
+.offer-three,
+.offer-four {
+  width: 45.5%;
+  height: 64vh;
+}
+
+.offer-one img,
+.offer-two img,
+.offer-three img,
+.offer-four img {
+  width: 100%;
+  height: auto;
+}

@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./font/flaticon.css";
 import "../HotelServices/hotelServices.css";
+import imgOne from "./img/hotelpool.jpg";
+import imgTwo from "./img/dinner.jpg";
+import imgThree from "./img/roomview.jpg";
+import imgFour from "./img/relax.jpg";
 
 class HotelServices extends Component {
   render() {
@@ -106,6 +110,29 @@ class HotelServices extends Component {
                 I could eat a peach for hours, not the bees, Cos I was made for
                 this sewer Baby and I AM the king
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="room-offers">
+          <div className="offer-one">
+            <div>
+              <img src={imgOne} />
+            </div>
+          </div>
+          <div className="offer-two">
+            <div>
+              <img src={imgTwo} />
+            </div>
+          </div>
+          <div className="offer-three">
+            <div>
+              <img src={imgThree} />
+            </div>
+          </div>
+          <div className="offer-four">
+            <div>
+              <img src={imgFour} />
             </div>
           </div>
         </div>
