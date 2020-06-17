@@ -26705,3 +26705,233 @@ Processing by HotelRoomsController#index as */*
 Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 3820)
 
 
+Started GET "/static/js/main.chunk.js" for ::1 at 2020-06-16 22:35:37 -0500
+Started GET "/static/js/0.chunk.js" for ::1 at 2020-06-16 22:35:37 -0500
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/main.chunk.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/0.chunk.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/static/js/main.chunk.js" for ::1 at 2020-06-16 22:35:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/main.chunk.js"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/zi-logo.ico" for ::1 at 2020-06-16 22:35:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/zi-logo.ico"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-16 22:35:52 -0500
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 181)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:36:15 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.3ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 33ms (Views: 10.8ms | ActiveRecord: 1.0ms | Allocations: 13812)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:36:20 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 3821)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:36:43 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 3821)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:41:56 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.3ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 3837)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:42:08 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 3834)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:42:39 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:42:46 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:43:28 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:44:07 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:46:19 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:46:23 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:46:26 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.3ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:46:28 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:48:35 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 3820)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:50:20 -0500
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 3913)
+
+
+Started GET "/hotel_rooms" for ::1 at 2020-06-16 22:58:42 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HotelRoomsController#index as */*
+  [1m[36mHotelRoom Load (0.2ms)[0m  [1m[34mSELECT "hotel_rooms".* FROM "hotel_rooms"[0m
+  ↳ app/controllers/hotel_rooms_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 3856)
+
+

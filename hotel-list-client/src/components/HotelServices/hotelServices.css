@@ -134,6 +134,7 @@
 .offer-four {
   width: 45.5%;
   height: 64vh;
+  overflow: hidden !important;
 }
 
 .offer-one img,
@@ -142,7 +143,16 @@
 .offer-four img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   filter: brightness(70%);
+  transition: transform 0.5s;
+}
+
+.offer-one img:hover,
+.offer-two img:hover,
+.offer-three img:hover,
+.offer-four img:hover {
+  transform: scale(1.2);
 }
 
 .room-desc {

@@ -116,7 +116,7 @@ class HotelServices extends Component {
 
         <div className="room-offers">
           <div className="offer-one">
-            <div>
+            <div className="offer-img-holder">
               <img src={imgOne} />
             </div>
             <div>
