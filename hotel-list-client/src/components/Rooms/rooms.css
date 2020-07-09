@@ -369,21 +369,215 @@
 ********************************/
 
 /*******************************
-*      Media Query 961px  
+*      Media Query Design  
 ********************************/
 
-@media (max-width: 961px) {
+@media (max-width: 1640px) {
   /*******************************
 *         Rooms Cards   
 ********************************/
 
   .rooms-card {
-    width: 95vw;
-    height: 40vh;
-    background-color: #ffffff;
+    width: 70vw;
+    height: 40.1vh;
     margin: 0.5rem;
     display: flex;
     justify-content: flex-start;
+  }
+
+  .left-col .lower-price,
+  .lower-price {
+    font-size: 1rem;
+  }
+
+  .left-col {
+    width: 41%;
+    height: 90%;
+    padding: 0 !important;
+    margin-right: 0.5rem;
+    border: 1px solid blue;
+    padding: 0.5rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-col img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .center-col {
+    width: 26vw;
+    border: 1px solid red;
+  }
+
+  .center-col h2 {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding-left: 0.5rem;
+  }
+
+  .room-additional-info p,
+  .allowed {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    padding-left: 0.5em;
+  }
+
+  .room-additional-info p i,
+  .allowed i {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-right: 1.5rem;
+  }
+
+  .price-title {
+    padding-right: 0.5rem;
+  }
+  .price-title h3 {
+    font-size: 1.2rem;
+  }
+
+  .price-title p {
+    font-size: 0.9rem;
+  }
+  .not-allowed {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    padding-right: 0.5rem;
+  }
+
+  .not-allowed i {
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .btn-more-info-holder,
+  .btn-close {
+    margin-right: 1.5rem !important;
+  }
+
+  .btn-more-info-holder {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .btn-more-info,
+  .btn-close {
+    padding: 0.5rem;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  .right-col .btn-reserve-holder {
+    margin-top: 4.5rem !important;
+  }
+
+  .right-col .btn-reserve {
+    padding: 0.7rem;
+    font-style: 0.9rem;
+  }
+
+  /*******************************
+*    END - Rooms Cards   
+********************************/
+
+  /*******************************
+*           Modal Style   
+********************************/
+
+  .modal {
+    position: fixed;
+    min-height: 100vh !important;
+    width: 100%;
+  }
+  .modal-container {
+    margin: 1px auto !important;
+    padding: 2%;
+    min-height: 100% !important;
+  }
+
+  .modal-container h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .modal-header {
+    padding: 0;
+    width: 50vw;
+    height: 35vh;
+  }
+
+  .modal-header img {
+    width: 90%;
+    height: 250px;
+  }
+
+  .modal-body {
+    width: 50vw;
+    min-height: 40vh;
+  }
+  .modal-body .top-info div h4 {
+    font-size: 1rem;
+  }
+  .modal-body .top-info {
+    padding: 0.1rem;
+    margin-top: 0rem;
+  }
+  .modal-body .top-info div p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .bottom-info p {
+    font-size: 0.9rem;
+  }
+  .bottom-info p i {
+    font-size: 0.9rem;
+  }
+  .modal-footer {
+    width: 50vw;
+    height: 7vw;
+    padding-bottom: 0.5rem;
+  }
+
+  .btn-close {
+    padding: 0.9rem 2rem !important;
+    font-size: 0.5rem;
+    line-height: 1;
+  }
+
+  /*******************************
+*    END -  Modal Style 
+********************************/
+}
+@media (max-width: 1300px) {
+  .rooms-card {
+    width: 85vw;
+    height: 37.1vh;
+  }
+
+  .left-col {
+    width: 43%;
+  }
+}
+@media (max-width: 641px) {
+  /*******************************
+*         Rooms Cards   
+********************************/
+
+  .rooms-card {
+    width: 98vw;
+    height: 32.9vh;
+    background-color: #ee1414;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: hidden !important;
   }
 
   .left-col .lower-price,
@@ -401,7 +595,7 @@
     object-fit: cover;
     border-radius: 0;
     width: 100%;
-    height: 100% !important;
+    height: auto !important;
   }
 
   .center-col {
