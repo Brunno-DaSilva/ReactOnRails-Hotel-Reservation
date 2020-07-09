@@ -113,35 +113,26 @@ class HotelServices extends Component {
         <div className="room-offers">
           <div className="offer-one">
             <div className="room-desc">
-              <p className="room-offer-price">$360 per night</p>
-              <h3 className="room-offer-title">Double Room</h3>
+              <p className="room-offer-price">Double Room</p>
+              <h3 className="room-offer-title">$360 per night</h3>
             </div>
           </div>
           <div className="offer-two">
             <div className="room-desc">
-              <p className="room-offer-price">
-                <span> $680</span> per night
-              </p>
-
-              <h3>Family Room</h3>
+              <p className="room-offer-price">Family Room </p>
+              <h3>$680 per night</h3>
             </div>
           </div>
           <div className="offer-three">
             <div className="room-desc">
-              <p className="room-offer-price">
-                <span> $480</span> per night
-              </p>
-
-              <h3>Double Room</h3>
+              <p className="room-offer-price">Double Room </p>
+              <h3>$480 per night</h3>
             </div>
           </div>
           <div className="offer-four">
             <div className="room-desc">
-              <p className="room-offer-price">
-                <span> $380</span> per night
-              </p>
-
-              <h3>Single Room</h3>
+              <p className="room-offer-price">Single Room </p>
+              <h3>$380 per night</h3>
             </div>
           </div>
         </div>

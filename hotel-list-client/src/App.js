@@ -1,6 +1,4 @@
 import React from "react";
-// import Room from "./components/Rooms/Room";
-// import Footer from "./components/Footer/Footer";
 
 import Header from "./components/Header/Header";
 import "./App.css";

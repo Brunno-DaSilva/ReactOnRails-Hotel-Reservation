@@ -80,7 +80,6 @@ HotelRoom.create([
     description:
       "The hotel rooms and suites at the Zilnai offer the perfect blend of beauty and elegance. Our rooms will elevate your stay, whether you're traveling for business, celebrating a honeymoon, or just looking for a remarkable getaway. With views of the Las Vegas valley or the iconic Zilnai fountains right from your suite, your stay will be nothing short of unforgettable."
   },
-
   
   {
     name: "double basic",
@@ -193,6 +192,7 @@ HotelRoom.create([
       "The hotel rooms and suites at the Zilnai offer the perfect blend of beauty and elegance. Our rooms will elevate your stay, whether you're traveling for business, celebrating a honeymoon, or just looking for a remarkable getaway. With views of the Las Vegas valley or the iconic Zilnai fountains right from your suite, your stay will be nothing short of unforgettable."
   }
 ]);
+
 Image.create([
   {
     roomImage: "images/room-1.jpeg",
