@@ -364,6 +364,14 @@
   border-radius: 5px;
 }
 
+/*******************************
+*    END -  Reservation Form 
+********************************/
+
+/*******************************
+*      Media Query 961px  
+********************************/
+
 @media (max-width: 961px) {
   /*******************************
 *         Rooms Cards   
@@ -386,7 +394,6 @@
   .left-col {
     width: 50%;
     height: 100%;
-    border: 1px solid red;
     padding: 0 !important;
     margin-right: 0.5rem;
   }
@@ -459,7 +466,6 @@
     padding: 0.5rem;
     font-size: 0.9rem !important;
     letter-spacing: 0.1em !important;
-    border: 1px solid red;
   }
 
   .right-col .btn-reserve-holder {
@@ -474,7 +480,73 @@
   /*******************************
 *    END - Rooms Cards   
 ********************************/
-}
-/*******************************
+
+  /*******************************
+*           Modal Style   
+********************************/
+
+  .modal {
+    position: fixed;
+    min-height: 100vh !important;
+    width: 100%;
+  }
+  .modal-container {
+    margin: 1px auto !important;
+    padding: 2%;
+    min-height: 100% !important;
+  }
+
+  .modal-container h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .modal-header {
+    padding: 0;
+    width: 50vw;
+    height: 35vh;
+  }
+
+  .modal-header img {
+    width: 90%;
+    height: 250px;
+  }
+
+  .modal-body {
+    width: 50vw;
+    min-height: 40vh;
+  }
+  .modal-body .top-info div h4 {
+    font-size: 1rem;
+  }
+  .modal-body .top-info {
+    padding: 0.1rem;
+    margin-top: 0rem;
+  }
+  .modal-body .top-info div p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .bottom-info p {
+    font-size: 0.9rem;
+  }
+  .bottom-info p i {
+    font-size: 0.9rem;
+  }
+  .modal-footer {
+    width: 50vw;
+    height: 7vw;
+    padding-bottom: 0.5rem;
+  }
+
+  .btn-close {
+    padding: 0.9rem 2rem !important;
+    font-size: 0.5rem;
+    line-height: 1;
+  }
+
+  /*******************************
 *    END -  Modal Style 
 ********************************/
+}
