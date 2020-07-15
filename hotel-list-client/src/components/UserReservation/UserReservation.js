@@ -13,14 +13,14 @@ class UserReservation extends Component {
       cvc: "",
       checkIn: "",
       checkOut: "",
-      roomName: ""
-    }
+      roomName: "",
+    },
   };
 
   // Display and Close Room information
-  onClose = e => {
+  onClose = (e) => {
     this.setState({
-      show: false
+      show: false,
     });
   };
 
@@ -29,32 +29,35 @@ class UserReservation extends Component {
   }
 
   getUserReservation() {
-    fetch("http://localhost:3000/user_reservations")
-      .then(res => res.json())
-      .then(jsonedUserReservation =>
+    const backendPort = "http://localhost:3000/";
+
+    fetch(`${backendPort}/user_reservations`)
+      .then((res) => res.json())
+      .then((jsonedUserReservation) =>
         this.setState({ userReservationData: jsonedUserReservation })
       )
-      .catch(error => console.error(error));
+      .catch((error) => console.error(error));
   }
 
   deleteReservation(id, index) {
     fetch(`http://localhost:3000/user_reservations/${id}`, {
-      method: "DELETE"
-    }).then(data => {
+      method: "DELETE",
+    }).then((data) => {
       this.setState({
         userReservationData: [
           ...this.state.userReservationData.slice(0, index),
-          ...this.state.userReservationData.slice(index + 1)
-        ]
+          ...this.state.userReservationData.slice(index + 1),
+        ],
       });
     });
   }
 
-  handleChange = event => {
-    const updateInput = Object.assign(this.state.userReservationData, {
-      [event.target.id]: event.target.value
+  handleChange = (event) => {
+    const updateInput = Object.assign(this.state.formInput, {
+      [event.target.id]: event.target.value,
     });
-    this.setState(updateInput);
+    console.log(event.target.id);
+    this.setState({ formInput: updateInput });
   };
 
   render() {
@@ -67,6 +70,7 @@ class UserReservation extends Component {
         <div className="col-container">
           <div className="user-reservation-container">
             {this.state.userReservationData.map((data, i) => {
+              console.log(data.id);
               return (
                 <div key={data.userName} className="user-reservation-details">
                   <div>

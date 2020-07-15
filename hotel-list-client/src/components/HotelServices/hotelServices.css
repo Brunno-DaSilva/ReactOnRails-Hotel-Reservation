@@ -192,7 +192,10 @@
   transition: ease-in-out 1s;
 }
 
-.offer-one:hover .room-offer-price::after {
+.offer-one:hover .room-offer-price::after,
+.offer-two:hover .room-offer-price::after,
+.offer-three:hover .room-offer-price::after,
+.offer-four:hover .room-offer-price::after {
   transform: scaleX(1);
 }
 
@@ -224,11 +227,15 @@
   transform-origin: top;
 }
 .offer-one:hover .room-offer-title,
-.offer-two:hover .room-offer-title {
+.offer-two:hover .room-offer-title,
+.offer-three:hover .room-offer-title,
+.offer-four:hover .room-offer-title {
   color: #f1f6fe;
 }
 
 .offer-one:hover .room-offer-title::after,
-.offer-two:hover .room-offer-title::after {
+.offer-two:hover .room-offer-title::after,
+.offer-three:hover .room-offer-title::after,
+.offer-four:hover .room-offer-title::after {
   transform: scaleX(1);
 }

@@ -395,7 +395,6 @@
     height: 90%;
     padding: 0 !important;
     margin-right: 0.5rem;
-    border: 1px solid blue;
     padding: 0.5rem !important;
     display: flex;
     justify-content: center;
@@ -410,26 +409,25 @@
 
   .center-col {
     width: 26vw;
-    border: 1px solid red;
   }
 
   .center-col h2 {
     margin-top: 0rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     letter-spacing: 0.1rem;
     padding-left: 0.5rem;
   }
 
   .room-additional-info p,
   .allowed {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
     padding-left: 0.5em;
   }
 
   .room-additional-info p i,
   .allowed i {
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1rem;
     margin-right: 1.5rem;
   }
