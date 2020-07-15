@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React-on-Rails Hotel Reservation :hotel:
 
 ## Overview:
@@ -11,18 +10,18 @@ save a reservation, delete an existent reservation.
 
 ## Technologies Used:
 
-    * React
-    * Rails
-    * Ruby
-    * PostgreSQL
-    * JS
-    * CSS
-    * FontAwesome
-    * Cloudinary
-    * Adobe Illustrator and Photoshop 
-    * Image retrieved from Unsplash and unDraw:
-        - Unsplash.com
-        - unDraw.co
+- React
+- Rails
+- Ruby
+- PostgreSQL
+- JS
+- CSS
+- FontAwesome
+- Cloudinary
+- Adobe Illustrator and Photoshop
+- Image retrieved from Unsplash and unDraw:
+  - Unsplash.com
+  - unDraw.co
 
 ## Aproach
 
@@ -62,29 +61,3 @@ map function and called it on my onClick alongside with data.id it
 worked properly.
 
 ##### Demo: Heroku app
-=======
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
->>>>>>> 561c950e53171213c37dc95a1d575d71fdb0d275
