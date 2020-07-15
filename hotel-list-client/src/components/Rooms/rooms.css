@@ -329,6 +329,20 @@
   font-size: 1.8rem;
   letter-spacing: 4px;
 }
+select {
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+  width: 25%;
+  padding: 0.2rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: none;
+  color: #ff5e00;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  margin-left: -10rem;
+}
 
 .modal-body input[type="submit"] {
   flex-basis: 27%;

@@ -405,13 +405,53 @@ class RoomCards extends Component {
                                 onChange={this.handleChange}
                               />
                               <label htmlFor="roomName">Room Name</label>
-                              <input
+                              <select
                                 type="text"
                                 id="roomName"
                                 required=""
                                 value={this.state.formInputs.roomName}
                                 onChange={this.handleChange}
-                              />
+                              >
+                                <option value="single-economy">
+                                  Single Economy
+                                </option>
+                                <option value="single-basic">
+                                  Single Basic
+                                </option>
+                                <option value="single-standard">
+                                  Single Standard
+                                </option>
+                                <option value="single-deluxe">
+                                  Single Deluxe
+                                </option>
+                                <option value="double-economy">
+                                  Double Economy
+                                </option>
+                                <option value="double-basic">
+                                  Double Basic
+                                </option>
+                                <option value="double-standard">
+                                  Double Standard
+                                </option>
+                                <option value="double deluxe">
+                                  Double Deluxe
+                                </option>
+                                <option value="family-economy">
+                                  Family economy
+                                </option>
+                                <option value="family-basic">
+                                  Family Basic
+                                </option>
+                                <option value="family-standard">
+                                  Family Standard
+                                </option>
+                                <option value="family-deluxe">
+                                  Family Deluxe
+                                </option>
+                                <option value="presidential-room">
+                                  Presidential Room
+                                </option>
+                              </select>
                               <input type="submit" className="submit" />
                             </form>
                           </div>
